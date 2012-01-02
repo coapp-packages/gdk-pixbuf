@@ -1,0 +1,28 @@
+#product-info {
+    product-name: "gdk-pixbuf";
+    version: "2.24.1";
+    original-source-location: "http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.24/gdk-pixbuf-2.24.1.tar.xz";
+    original-source-website: "http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf";
+    license: "LGPL2 or greater";
+    packager: "Vincent Povirk <madewokherd@gmail.com>";
+}
+
+x86 {
+    uses: x86="..\libpng";
+    uses: x86="..\zlib";
+    uses: x86="..\glib";
+    uses: default="..\gettext";
+
+    targets: {
+        "build\win32\vs10\Release\Win32\bin\gdk_pixbuf-2-vs10.dll",
+        "build\win32\vs10\Release\Win32\bin\gdk_pixbuf-2.0.lib"
+    };
+
+    build-command: "msbuild /p:Platform=Win32 /p:Configuration=Release build\win32\vs10\gdk-pixbuf.sln";
+    
+    clean-command: @"
+        rmdir /S /Q build\win32\vs10\Release 2>NUL
+        if exist config.h erase config.h
+        if exist gdk-pixbuf\gdk-pixbuf.def erase gdk-pixbuf\gdk-pixbuf.def
+    ";
+}
