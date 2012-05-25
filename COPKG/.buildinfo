@@ -23,11 +23,17 @@ x86 {
         @"vs10\Win32\lib\gdk_pixbuf-2.0.lib",
     };
 
-    build-command: "msbuild /p:Platform=Win32 /p:Configuration=Release build\win32\vs10\gdk-pixbuf.sln";
+    build-command: @"
+		if ""${BUILT}"" equ ""true"" goto end
+		msbuild /p:Platform=Win32 /p:Configuration=Release build\win32\vs10\gdk-pixbuf.sln
+:end
+";
     
     clean-command: @"
-        rmdir /S /Q build\win32\vs10\Release 2>NUL
         if exist config.h erase config.h
         if exist gdk-pixbuf\gdk-pixbuf.def erase gdk-pixbuf\gdk-pixbuf.def
+		rd /s /q vs10\win32
+		rd /q vs10
+		rd /s /q build\win32\vs10\Release
     ";
 }
