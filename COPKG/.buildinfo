@@ -18,8 +18,10 @@ x86 {
 	};
 
     targets: {
-        "build\win32\vs10\Release\Win32\bin\gdk_pixbuf-2-vs10.dll",
-        "build\win32\vs10\Release\Win32\bin\gdk_pixbuf-2.0.lib"
+        @"vs10\Win32\bin\gdk-pixbuf-csource.exe",
+        @"vs10\Win32\bin\gdk-pixbuf-query-loaders.exe",
+        @"vs10\Win32\bin\gdk_pixbuf-2-vs10.dll",
+        @"vs10\Win32\lib\gdk_pixbuf-2.0.lib",
     };
 
     build-command: "msbuild /p:Platform=Win32 /p:Configuration=Release build\win32\vs10\gdk-pixbuf.sln";
