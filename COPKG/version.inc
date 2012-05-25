@@ -17,7 +17,3 @@
 #define { libpng-dep-version: "1.5.4"; }
 
 #define { libpng-dep-publickeytoken: "${deps-publickeytoken}"; }
-
-#define { zlib-dep-version: "1.2.5; }
-
-#define { zlib-dep-publickeytoken: "${deps-publickeytoken}"; }

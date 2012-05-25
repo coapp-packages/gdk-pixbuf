@@ -14,7 +14,6 @@ x86 {
 		"glib-dev[vc10]-${glib-dep-version}-x86-${glib-dep-publickeytoken}",
 		"libintl-dev[vc10]-${libintl-dep-version}-x86-${libintl-dep-publickeytoken}",
 		"libpng-dev[vc10]-${libpng-dep-version}-x86-${libpng-dep-publickeytoken}",
-		"zlib-dev[vc10]-${zlib-dep-version}-x86-${zlib-dep-publickeytoken}",
 	};
 
     targets: {
