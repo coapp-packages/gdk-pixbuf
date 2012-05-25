@@ -1,0 +1,48 @@
+@import "version.inc";
+@import "compat.inc" ;
+@import "outercurve.inc";
+
+package {
+    name: "gdk-pixbuf-dev-common";
+    version: "${package-version}";
+    arch : "any";
+
+    display-name: "GDK-Pixbuf Dev Common";
+    location: "http://coapp.org/repository/${OutputFilename}";
+
+    feed: "http://coapp.org/repository/packages.atom.xml";
+    publisher: "CoApp Project";
+}
+
+license[LGPL2] {
+	license: @"..\COPYING";
+    license-url: "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html";
+    license-type: "LGPL";
+}
+
+metadata {  
+    summary: "GDK-Pixbuf Dev Common";
+    description: @"A library for loading image files.";
+    author-version : "${author-version}";
+    bug-tracker: "https://github.com/coapp-packages/gdk-pixbuf/issues";
+    stability : "0";
+    licenses : {
+        LGPL2
+    };
+}
+
+developer-library[gdk-pixbuf] {
+    headers: { 
+        headers
+    };
+}
+
+files[headers] {
+    root: @"..\vs10\Win32\include\gdk-pixbuf-2.0";
+
+    include: {
+        "gdk-pixbuf/*.h",
+    };
+
+    trim-path: none;
+};
