@@ -37,3 +37,28 @@ x86 {
 		rd /s /q build\win32\vs10\Release
     ";
 }
+
+release {
+	uses: x86;
+}
+
+test {
+}
+
+package {
+	uses: release;
+
+	build-command: @"
+        cd COPKG
+        autopackage gdk-pixbuf.autopkg || goto failed
+	";
+
+	targets: {
+		@"COPKG\gdk-pixbuf[vc10]-${package-version}-x86.msi",
+	};
+
+	clean-command: @"
+		del COPKG\*.msi
+		del COPKG\*.wixpdb
+	";
+}
