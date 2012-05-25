@@ -1,0 +1,109 @@
+@import "version.inc";
+@import "compat.inc" ;
+@import "outercurve.inc";
+
+#define { 
+    flavor: "${comp??vc10}"; 
+    arch : "${plat??x86}";
+}
+
+package {
+    name: "gdk-pixbuf-dev[${flavor}]";
+    version: "${package-version}";
+    arch : "${arch}";
+
+    display-name: "GDK-Pixbuf Dev Library";
+    location: "http://coapp.org/repository/${OutputFilename}";
+
+    feed: "http://coapp.org/repository/packages.atom.xml";
+    publisher: "CoApp Project";
+}
+
+license[LGPL2] {
+	license: @"..\COPYING";
+    license-url: "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html";
+    license-type: "LGPL";
+}
+
+requires {
+    package: "glib-dev[${flavor}]-${glib-dep-version}-${Package.Architecture}-${glib-dep-publickeytoken}";
+    package: "glib[${flavor}]-${glib-dep-version}-${Package.Architecture}-${glib-dep-publickeytoken}";
+    package: "gdk-pixbuf[${flavor}]-${package-version}-${arch}-${Package.PublicKeyToken}";
+    package: "gdk-pixbuf-dev-common-${package-version}-any-${Package.PublicKeyToken}";
+}
+
+metadata {  
+    summary: "GDK-Pixbuf Dev Library";
+    description: @"A library for loading image files.";
+    author-version : "${author-version}";
+    bug-tracker: "https://github.com/coapp-packages/gdk-pixbuf/issues";
+    stability : "0";
+    licenses : {
+        LGPL2
+    };
+}
+
+signing {
+    attributes : {
+        company="Outercurve Foundation",
+        description="A library for loading image files.",
+        product-name="GDK-Pixbuf",
+        product-version="${package-version}",
+        file-version="${package-version}",
+    };
+
+    replace-signature: true; 
+    include: { 
+        exes
+    };    
+}
+
+manifest[gdkpixbuf] {
+    assembly : {
+        "glib[${flavor}]",
+        "gdk-pixbuf[${flavor}]",
+    };
+
+    include : { 
+        exes
+    };
+}
+
+developer-library[gdk-pixbuf[${flavor}]] {
+    libraries : {
+        libs,
+    };
+}
+
+application {
+    include : {
+        exes,
+    };
+}
+
+package-composition {
+    symlinks : { 
+        exes => @"${bin}\${each.Name}" = @"${packagedir}\${each.Name}";
+    };
+}
+
+files[exes] {
+    root: @"..\vs10\Win32\bin";
+
+    include: {
+        "gdk-pixbuf-csource.exe",
+		// "gdk-pixbuf-query-loaders.exe", // This is only useful for plugins, and we don't know how plugins will work yet.
+    };
+
+    trim-path: all;
+}
+
+files[libs] {
+    root: @"..\vs10\Win32\lib";
+
+    include: {
+        "gdk_pixbuf-2.0.lib",
+    };
+
+    trim-path: all;
+};

@@ -51,11 +51,12 @@ package {
 	build-command: @"
         cd COPKG
         autopackage gdk-pixbuf-dev-common.autopkg || goto failed
-        autopackage gdk-pixbuf.autopkg || goto failed
+        autopackage gdk-pixbuf.autopkg gdk-pixbuf-dev.autopkg || goto failed
 	";
 
 	targets: {
 		@"COPKG\gdk-pixbuf[vc10]-${package-version}-x86.msi",
+		@"COPKG\gdk-pixbuf-dev[vc10]-${package-version}-x86.msi",
 		@"COPKG\gdk-pixbuf-dev-common-${package-version}-any.msi",
 	};
 
