@@ -1,6 +1,8 @@
+@import "version.inc";
+
 #product-info {
     product-name: "gdk-pixbuf";
-    version: "2.24.1";
+    version: "${package-version}";
     original-source-location: "http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.24/gdk-pixbuf-2.24.1.tar.xz";
     original-source-website: "http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf";
     license: "LGPL2 or greater";
@@ -8,10 +10,12 @@
 }
 
 x86 {
-    uses: x86="..\libpng";
-    uses: x86="..\zlib";
-    uses: x86="..\glib";
-    uses: default="..\gettext";
+	requires: {
+		"glib-dev[vc10]-${glib-dep-version}-x86-${glib-dep-publickeytoken}",
+		"libintl-dev[vc10]-${libintl-dep-version}-x86-${libintl-dep-publickeytoken}",
+		"libpng-dev[vc10]-${libpng-dep-version}-x86-${libpng-dep-publickeytoken}",
+		"zlib-dev[vc10]-${zlib-dep-version}-x86-${zlib-dep-publickeytoken}",
+	};
 
     targets: {
         "build\win32\vs10\Release\Win32\bin\gdk_pixbuf-2-vs10.dll",
