@@ -15,6 +15,9 @@
 }
 
 x86 {
+    compiler: vc10;
+    platform: x86;
+
 	requires: {
 		"glib-dev[vc10]-${glib-dep-version}-x86-${glib-dep-publickeytoken}",
 		"libintl-dev[vc10]-${libintl-dep-version}-x86-${libintl-dep-publickeytoken}",
