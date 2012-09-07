@@ -86,6 +86,11 @@ libpixbufloader_wbmp_la_LDFLAGS = -avoid-version -module $(no_undefined)
 libpixbufloader_wbmp_la_LIBADD = $(module_libs)
 
 #
+# The GdkPixdata loader, always built in
+#
+libstatic_pixbufloader_pixdata_la_SOURCES = io-pixdata.c
+
+#
 # The GIF loader
 #
 libstatic_pixbufloader_gif_la_SOURCES = io-gif.c io-gif-animation.c io-gif-animation.h
@@ -456,6 +461,9 @@ else
 QTIF_LIB = libpixbufloader-qtif.la
 endif
 
+# Always included
+STATIC_PIXDATA_LIB = libstatic-pixbufloader-pixdata.la
+
 if BUILD_DYNAMIC_MODULES
 
 loader_LTLIBRARIES = 	\
@@ -482,6 +490,7 @@ loader_LTLIBRARIES = 	\
 endif
 
 noinst_LTLIBRARIES =		\
+	$(STATIC_PIXDATA_LIB)	\
 	$(STATIC_PNG_LIB)	\
 	$(STATIC_BMP_LIB)	\
 	$(STATIC_WBMP_LIB)	\
@@ -501,8 +510,7 @@ noinst_LTLIBRARIES =		\
 	$(STATIC_QTIF_LIB)	\
 	$(STATIC_GDIPLUS_LIBS)
 
-builtin_objs = @INCLUDED_LOADER_OBJ@
-
+builtin_objs = @INCLUDED_LOADER_OBJ@ $(STATIC_PIXDATA_LIB)
 
 DEPS = libgdk_pixbuf-$(GDK_PIXBUF_API_VERSION).la
 INCLUDES = \
@@ -526,9 +534,12 @@ LDADDS = libgdk_pixbuf-$(GDK_PIXBUF_API_VERSION).la $(GDK_PIXBUF_DEP_LIBS)
 noinst_PROGRAMS = test-gdk-pixbuf
 test_gdk_pixbuf_LDADD = $(LDADDS)
 
-bin_PROGRAMS = gdk-pixbuf-csource gdk-pixbuf-query-loaders
+bin_PROGRAMS = gdk-pixbuf-csource gdk-pixbuf-pixdata gdk-pixbuf-query-loaders
 gdk_pixbuf_csource_SOURCES = gdk-pixbuf-csource.c
 gdk_pixbuf_csource_LDADD = $(LDADDS)
+
+gdk_pixbuf_pixdata_SOURCES = gdk-pixbuf-pixdata.c
+gdk_pixbuf_pixdata_LDADD = $(LDADDS)
 
 gdk_pixbuf_query_loaders_DEPENDENCIES = $(DEPS)
 gdk_pixbuf_query_loaders_LDADD = $(LDADDS)
@@ -715,7 +726,7 @@ GdkPixbuf_2_0_gir_INCLUDES = GModule-2.0 Gio-2.0
 GdkPixbuf_2_0_gir_LIBS = libgdk_pixbuf-2.0.la
 GdkPixbuf_2_0_gir_CFLAGS = \
 	-DGDK_PIXBUF_COMPILATION					\
-	-I$(top_srcdir) -I$(top_builddir) 				\
+	-I$(top_builddir) -I$(top_srcdir) 				\
 	-I$(top_srcdir)/gdk-pixbuf 					\
 	-I$(top_builddir)/gdk-pixbuf 					\
 	$(GDK_PIXBUF_DEP_CFLAGS)

@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GdkPixbufLoader</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
 <link rel="home" href="index.html" title="GDK-PixBuf Reference Manual">
 <link rel="up" href="rn01.html" title="API Reference">
 <link rel="prev" href="gdk-pixbuf-Animations.html" title="Animations">
 <link rel="next" href="gdk-pixbuf-Module-Interface.html" title="Module Interface">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -47,22 +47,22 @@
 struct              <a class="link" href="GdkPixbufLoader.html#GdkPixbufLoader-struct" title="struct GdkPixbufLoader">GdkPixbufLoader</a>;
 <a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="returnvalue">GdkPixbufLoader</span></a> *   <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-new" title="gdk_pixbuf_loader_new ()">gdk_pixbuf_loader_new</a>               (<em class="parameter"><code><span class="type">void</span></code></em>);
 <a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="returnvalue">GdkPixbufLoader</span></a> *   <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-new-with-type" title="gdk_pixbuf_loader_new_with_type ()">gdk_pixbuf_loader_new_with_type</a>     (<em class="parameter"><code>const <span class="type">char</span> *image_type</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
 <a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="returnvalue">GdkPixbufLoader</span></a> *   <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-new-with-mime-type" title="gdk_pixbuf_loader_new_with_mime_type ()">gdk_pixbuf_loader_new_with_mime_type</a>
                                                         (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
 <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" title="struct GdkPixbufFormat"><span class="returnvalue">GdkPixbufFormat</span></a> *   <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-get-format" title="gdk_pixbuf_loader_get_format ()">gdk_pixbuf_loader_get_format</a>        (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-write" title="gdk_pixbuf_loader_write ()">gdk_pixbuf_loader_write</a>             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-write" title="gdk_pixbuf_loader_write ()">gdk_pixbuf_loader_write</a>             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">guchar</span> *buf</code></em>,
+                                                         <em class="parameter"><code><span class="type">gsize</span> count</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-set-size" title="gdk_pixbuf_loader_set_size ()">gdk_pixbuf_loader_set_size</a>          (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> width</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> height</code></em>);
 <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-get-pixbuf" title="gdk_pixbuf_loader_get_pixbuf ()">gdk_pixbuf_loader_get_pixbuf</a>        (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>);
 <a class="link" href="gdk-pixbuf-Animations.html#GdkPixbufAnimation"><span class="returnvalue">GdkPixbufAnimation</span></a> * <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-get-animation" title="gdk_pixbuf_loader_get_animation ()">gdk_pixbuf_loader_get_animation</a>    (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-close" title="gdk_pixbuf_loader_close ()">gdk_pixbuf_loader_close</a>             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-close" title="gdk_pixbuf_loader_close ()">gdk_pixbuf_loader_close</a>             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -126,7 +126,7 @@ before the image is done loading.
 <p>
 </p>
 <div class="refsect2">
-<a name="id546431"></a><h3>Loading an animation</h3>
+<a name="id560847"></a><h3>Loading an animation</h3>
 <p>
 Loading an animation is almost as easy as loading an
 image. Once the first "<a class="link" href="GdkPixbufLoader.html#GdkPixbufLoader-area-prepared" title='The "area-prepared" signal'>area_prepared</a>" signal
@@ -155,8 +155,11 @@ fields.
 <p>
 Creates a new pixbuf loader object.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>A newly-created pixbuf loader.</td>
@@ -167,7 +170,7 @@ Creates a new pixbuf loader object.
 <div class="refsect2">
 <a name="gdk-pixbuf-loader-new-with-type"></a><h3>gdk_pixbuf_loader_new_with_type ()</h3>
 <pre class="programlisting"><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="returnvalue">GdkPixbufLoader</span></a> *   gdk_pixbuf_loader_new_with_type     (<em class="parameter"><code>const <span class="type">char</span> *image_type</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>
 Creates a new pixbuf loader object that always attempts to parse
 image data as if it were an image of type <em class="parameter"><code>image_type</code></em>, instead of
@@ -183,8 +186,11 @@ are installed, but typically "png", "jpeg", "gif", "tiff" and
 supported image formats, call <a class="link" href="gdk-pixbuf-Module-Interface.html#gdk-pixbuf-format-get-name" title="gdk_pixbuf_format_get_name ()"><code class="function">gdk_pixbuf_format_get_name()</code></a> on each 
 of the <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" title="struct GdkPixbufFormat"><span class="type">GdkPixbufFormat</span></a> structs returned by <a class="link" href="gdk-pixbuf-Module-Interface.html#gdk-pixbuf-get-formats" title="gdk_pixbuf_get_formats ()"><code class="function">gdk_pixbuf_get_formats()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>image_type</code></em> :</span></p></td>
@@ -192,7 +198,7 @@ of the <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" t
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore errors. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+<td>return location for an allocated <span class="type">GError</span>, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> to ignore errors. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
@@ -207,7 +213,7 @@ of the <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" t
 <a name="gdk-pixbuf-loader-new-with-mime-type"></a><h3>gdk_pixbuf_loader_new_with_mime_type ()</h3>
 <pre class="programlisting"><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="returnvalue">GdkPixbufLoader</span></a> *   gdk_pixbuf_loader_new_with_mime_type
                                                         (<em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>
 Creates a new pixbuf loader object that always attempts to parse
 image data as if it were an image of mime type <em class="parameter"><code>mime_type</code></em>, instead of
@@ -224,8 +230,11 @@ To obtain the full list of supported mime types, call
 <a class="link" href="gdk-pixbuf-Module-Interface.html#gdk-pixbuf-format-get-mime-types" title="gdk_pixbuf_format_get_mime_types ()"><code class="function">gdk_pixbuf_format_get_mime_types()</code></a> on each of the <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" title="struct GdkPixbufFormat"><span class="type">GdkPixbufFormat</span></a> 
 structs returned by <a class="link" href="gdk-pixbuf-Module-Interface.html#gdk-pixbuf-get-formats" title="gdk_pixbuf_get_formats ()"><code class="function">gdk_pixbuf_get_formats()</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mime_type</code></em> :</span></p></td>
@@ -233,7 +242,7 @@ structs returned by <a class="link" href="gdk-pixbuf-Module-Interface.html#gdk-p
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore errors. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+<td>return location for an allocated <span class="type">GError</span>, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> to ignore errors. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
@@ -252,8 +261,11 @@ structs returned by <a class="link" href="gdk-pixbuf-Module-Interface.html#gdk-p
 Obtains the available information about the format of the 
 currently loading image file.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -261,8 +273,9 @@ currently loading image file.
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>A <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" title="struct GdkPixbufFormat"><span class="type">GdkPixbufFormat</span></a> or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>. The return value is owned
-by GdkPixbuf and should not be freed.</td>
+<td>A <a class="link" href="gdk-pixbuf-Module-Interface.html#GdkPixbufFormat" title="struct GdkPixbufFormat"><span class="type">GdkPixbufFormat</span></a> or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>. The return
+value is owned by GdkPixbuf and should not be freed. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
 </tr>
 </tbody>
 </table></div>
@@ -271,20 +284,23 @@ by GdkPixbuf and should not be freed.</td>
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-loader-write"></a><h3>gdk_pixbuf_loader_write ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            gdk_pixbuf_loader_write             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gdk_pixbuf_loader_write             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">guchar</span> *buf</code></em>,
+                                                         <em class="parameter"><code><span class="type">gsize</span> count</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>
 This will cause a pixbuf loader to parse the next <em class="parameter"><code>count</code></em> bytes of
-an image.  It will return <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the data was loaded successfully,
-and <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if an error occurred.  In the latter case, the loader
-will be closed, and will not accept further writes. If <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is
+an image.  It will return <code class="literal">TRUE</code> if the data was loaded successfully,
+and <code class="literal">FALSE</code> if an error occurred.  In the latter case, the loader
+will be closed, and will not accept further writes. If <code class="literal">FALSE</code> is
 returned, <em class="parameter"><code>error</code></em> will be set to an error from the <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GDK-PIXBUF-ERROR:CAPS" title="GDK_PIXBUF_ERROR"><span class="type">GDK_PIXBUF_ERROR</span></a>
-or <a href="http://library.gnome.org/devel/glib/unstable/glib-File-Utilities.html#G-FILE-ERROR:CAPS"><span class="type">G_FILE_ERROR</span></a> domains.
+or <span class="type">G_FILE_ERROR</span> domains.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -306,7 +322,7 @@ or <a href="http://library.gnome.org/devel/glib/unstable/glib-File-Utilities.htm
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the write was successful, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the loader
+<code class="literal">TRUE</code> if the write was successful, or <code class="literal">FALSE</code> if the loader
 cannot parse the buffer.</td>
 </tr>
 </tbody>
@@ -328,8 +344,11 @@ signal handler for the ::size-prepared signal.
 Attempts to set the desired image size  are ignored after the 
 emission of the ::size-prepared signal.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -357,15 +376,18 @@ In general it only makes sense to call this function after the
 "area-prepared" signal has been emitted by the loader; this means
 that enough data has been read to know the size of the image that
 will be allocated.  If the loader has not received enough data via
-<a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-write" title="gdk_pixbuf_loader_write ()"><code class="function">gdk_pixbuf_loader_write()</code></a>, then this function returns <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.  The
+<a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-write" title="gdk_pixbuf_loader_write ()"><code class="function">gdk_pixbuf_loader_write()</code></a>, then this function returns <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.  The
 returned pixbuf will be the same in all future calls to the loader,
 so simply calling <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-ref"><code class="function">g_object_ref()</code></a> should be sufficient to continue
 using it.  Additionally, if the loader is an animation, it will
 return the "static image" of the animation
 (see <a class="link" href="gdk-pixbuf-Animations.html#gdk-pixbuf-animation-get-static-image" title="gdk_pixbuf_animation_get_static_image ()"><code class="function">gdk_pixbuf_animation_get_static_image()</code></a>).
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -373,7 +395,7 @@ return the "static image" of the animation
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>The <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> that the loader is creating, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not
+<td>The <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> that the loader is creating, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if not
 enough data has been read to determine how to create the image buffer. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
 </tr>
@@ -389,10 +411,13 @@ Queries the <a class="link" href="gdk-pixbuf-Animations.html#GdkPixbufAnimation"
 In general it only makes sense to call this function after the "area-prepared"
 signal has been emitted by the loader. If the loader doesn't have enough
 bytes yet (hasn't emitted the "area-prepared" signal) this function will 
-return <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a>.
+return <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -400,7 +425,7 @@ return <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>The <a class="link" href="gdk-pixbuf-Animations.html#GdkPixbufAnimation"><span class="type">GdkPixbufAnimation</span></a> that the loader is loading, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+<td>The <a class="link" href="gdk-pixbuf-Animations.html#GdkPixbufAnimation"><span class="type">GdkPixbufAnimation</span></a> that the loader is loading, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if
 not enough data has been read to determine the information. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
 </tr>
@@ -410,25 +435,28 @@ not enough data has been read to determine the information. <span class="annotat
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-loader-close"></a><h3>gdk_pixbuf_loader_close ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            gdk_pixbuf_loader_close             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            gdk_pixbuf_loader_close             (<em class="parameter"><code><a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>
 Informs a pixbuf loader that no further writes with
 <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-write" title="gdk_pixbuf_loader_write ()"><code class="function">gdk_pixbuf_loader_write()</code></a> will occur, so that it can free its
 internal loading structures. Also, tries to parse any data that
 hasn't yet been parsed; if the remaining data is partial or
-corrupt, an error will be returned.  If <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned, <em class="parameter"><code>error</code></em>
-will be set to an error from the <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GDK-PIXBUF-ERROR:CAPS" title="GDK_PIXBUF_ERROR"><span class="type">GDK_PIXBUF_ERROR</span></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-File-Utilities.html#G-FILE-ERROR:CAPS"><span class="type">G_FILE_ERROR</span></a>
+corrupt, an error will be returned.  If <code class="literal">FALSE</code> is returned, <em class="parameter"><code>error</code></em>
+will be set to an error from the <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GDK-PIXBUF-ERROR:CAPS" title="GDK_PIXBUF_ERROR"><span class="type">GDK_PIXBUF_ERROR</span></a> or <span class="type">G_FILE_ERROR</span>
 domains. If you're just cancelling a load rather than expecting it
-to be finished, passing <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> for <em class="parameter"><code>error</code></em> to ignore it is
+to be finished, passing <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> for <em class="parameter"><code>error</code></em> to ignore it is
 reasonable.
 </p>
 <p>
 Remember that this does not unref the loader, so if you plan not to
 use it anymore, please <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> it.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -436,13 +464,13 @@ use it anymore, please <a href="http://library.gnome.org/devel/gobject/unstable/
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>return location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore errors. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+<td>return location for a <span class="type">GError</span>, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> to ignore errors. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if all image data written so far was successfully
+<code class="literal">TRUE</code> if all image data written so far was successfully
 passed out via the update_area signal</td>
 </tr>
 </tbody>
@@ -454,15 +482,18 @@ passed out via the update_area signal</td>
 <div class="refsect2">
 <a name="GdkPixbufLoader-area-prepared"></a><h3>The <code class="literal">"area-prepared"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
 <p>
 This signal is emitted when the pixbuf loader has allocated the
 pixbuf in the desired size.  After this signal is emitted, 
 applications can call <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-get-pixbuf" title="gdk_pixbuf_loader_get_pixbuf ()"><code class="function">gdk_pixbuf_loader_get_pixbuf()</code></a> to fetch 
 the partially-loaded pixbuf.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -479,11 +510,11 @@ the partially-loaded pixbuf.
 <div class="refsect2">
 <a name="GdkPixbufLoader-area-updated"></a><h3>The <code class="literal">"area-updated"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             x,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             y,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             width,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             height,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>             x,
+                                                        <span class="type">gint</span>             y,
+                                                        <span class="type">gint</span>             width,
+                                                        <span class="type">gint</span>             height,
+                                                        <span class="type">gpointer</span>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
 <p>
 This signal is emitted when a significant area of the image being
 loaded has been updated.  Normally it means that a complete
@@ -491,8 +522,11 @@ scanline has been read in, but it could be a different area as
 well.  Applications can use this signal to know when to repaint
 areas of an image that is being loaded.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -525,15 +559,18 @@ areas of an image that is being loaded.
 <div class="refsect2">
 <a name="GdkPixbufLoader-closed"></a><h3>The <code class="literal">"closed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gpointer</span>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
 <p>
 This signal is emitted when <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-close" title="gdk_pixbuf_loader_close ()"><code class="function">gdk_pixbuf_loader_close()</code></a> is called.
 It can be used by different parts of an application to receive
 notification when an image loader is closed by the code that
 drives it.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -550,9 +587,9 @@ drives it.
 <div class="refsect2">
 <a name="GdkPixbufLoader-size-prepared"></a><h3>The <code class="literal">"size-prepared"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="GdkPixbufLoader.html" title="GdkPixbufLoader"><span class="type">GdkPixbufLoader</span></a> *loader,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             width,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             height,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <span class="type">gint</span>             width,
+                                                        <span class="type">gint</span>             height,
+                                                        <span class="type">gpointer</span>         user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
 <p>
 This signal is emitted when the pixbuf loader has been fed the
 initial amount of data that is required to figure out the size
@@ -560,8 +597,11 @@ of the image that it will create.  Applications can call
 <a class="link" href="GdkPixbufLoader.html#gdk-pixbuf-loader-set-size" title="gdk_pixbuf_loader_set_size ()"><code class="function">gdk_pixbuf_loader_set_size()</code></a> in response to this signal to set
 the desired size to which the image should be scaled.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>loader</code></em> :</span></p></td>
@@ -590,6 +630,6 @@ gdk_pixbuf_new_from_file(), <a class="link" href="gdk-pixbuf-Animations.html#gdk
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

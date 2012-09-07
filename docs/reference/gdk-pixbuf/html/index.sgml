@@ -38,9 +38,11 @@
 <ANCHOR id="gdk-pixbuf-get-has-alpha" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-has-alpha">
 <ANCHOR id="gdk-pixbuf-get-bits-per-sample" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-bits-per-sample">
 <ANCHOR id="gdk-pixbuf-get-pixels" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-pixels">
+<ANCHOR id="gdk-pixbuf-get-pixels-with-length" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-pixels-with-length">
 <ANCHOR id="gdk-pixbuf-get-width" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-width">
 <ANCHOR id="gdk-pixbuf-get-height" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-height">
 <ANCHOR id="gdk-pixbuf-get-rowstride" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-rowstride">
+<ANCHOR id="gdk-pixbuf-get-byte-length" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-byte-length">
 <ANCHOR id="gdk-pixbuf-get-option" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-get-option">
 <ANCHOR id="gdk-pixbuf-The-GdkPixbuf-Structure.property-details" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#gdk-pixbuf-The-GdkPixbuf-Structure.property-details">
 <ANCHOR id="GdkPixbuf--bits-per-sample" href="gdk-pixbuf/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf--bits-per-sample">
@@ -67,8 +69,13 @@
 <ANCHOR id="gdk-pixbuf-new-from-file-at-size" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file-at-size">
 <ANCHOR id="gdk-pixbuf-new-from-file-at-scale" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-file-at-scale">
 <ANCHOR id="gdk-pixbuf-get-file-info" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-get-file-info">
+<ANCHOR id="gdk-pixbuf-new-from-resource" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-resource">
+<ANCHOR id="gdk-pixbuf-new-from-resource-at-scale" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-resource-at-scale">
 <ANCHOR id="gdk-pixbuf-new-from-stream" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-stream">
+<ANCHOR id="gdk-pixbuf-new-from-stream-async" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-stream-async">
+<ANCHOR id="gdk-pixbuf-new-from-stream-finish" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-stream-finish">
 <ANCHOR id="gdk-pixbuf-new-from-stream-at-scale" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-stream-at-scale">
+<ANCHOR id="gdk-pixbuf-new-from-stream-at-scale-async" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-new-from-stream-at-scale-async">
 <ANCHOR id="gdk-pixbuf-File-Loading.see-also" href="gdk-pixbuf/gdk-pixbuf-File-Loading.html#gdk-pixbuf-File-Loading.see-also">
 <ANCHOR id="gdk-pixbuf-File-saving" href="gdk-pixbuf/gdk-pixbuf-File-saving.html">
 <ANCHOR id="gdk-pixbuf-File-saving.synopsis" href="gdk-pixbuf/gdk-pixbuf-File-saving.html#gdk-pixbuf-File-saving.synopsis">
@@ -82,6 +89,8 @@
 <ANCHOR id="gdk-pixbuf-save-to-buffer" href="gdk-pixbuf/gdk-pixbuf-File-saving.html#gdk-pixbuf-save-to-buffer">
 <ANCHOR id="gdk-pixbuf-save-to-bufferv" href="gdk-pixbuf/gdk-pixbuf-File-saving.html#gdk-pixbuf-save-to-bufferv">
 <ANCHOR id="gdk-pixbuf-save-to-stream" href="gdk-pixbuf/gdk-pixbuf-File-saving.html#gdk-pixbuf-save-to-stream">
+<ANCHOR id="gdk-pixbuf-save-to-stream-async" href="gdk-pixbuf/gdk-pixbuf-File-saving.html#gdk-pixbuf-save-to-stream-async">
+<ANCHOR id="gdk-pixbuf-save-to-stream-finish" href="gdk-pixbuf/gdk-pixbuf-File-saving.html#gdk-pixbuf-save-to-stream-finish">
 <ANCHOR id="gdk-pixbuf-Image-Data-in-Memory" href="gdk-pixbuf/gdk-pixbuf-Image-Data-in-Memory.html">
 <ANCHOR id="gdk-pixbuf-Image-Data-in-Memory.synopsis" href="gdk-pixbuf/gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-Image-Data-in-Memory.synopsis">
 <ANCHOR id="gdk-pixbuf-Image-Data-in-Memory.description" href="gdk-pixbuf/gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-Image-Data-in-Memory.description">
@@ -251,5 +260,5 @@
 <ANCHOR id="annotation-glossterm-array" href="gdk-pixbuf/annotation-glossary.html#annotation-glossterm-array">
 <ANCHOR id="annotation-glossterm-element-type" href="gdk-pixbuf/annotation-glossary.html#annotation-glossterm-element-type">
 <ANCHOR id="annotation-glossterm-transfer container" href="gdk-pixbuf/annotation-glossary.html#annotation-glossterm-transfer container">
-<ANCHOR id="annotation-glossterm-scope call" href="gdk-pixbuf/annotation-glossary.html#annotation-glossterm-scope call">
 <ANCHOR id="annotation-glossterm-transfer full" href="gdk-pixbuf/annotation-glossary.html#annotation-glossterm-transfer full">
+<ANCHOR id="annotation-glossterm-scope call" href="gdk-pixbuf/annotation-glossary.html#annotation-glossterm-scope call">

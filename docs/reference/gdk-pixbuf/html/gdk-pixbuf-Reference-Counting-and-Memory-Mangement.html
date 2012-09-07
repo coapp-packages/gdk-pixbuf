@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Reference Counting and Memory Mangement</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
 <link rel="home" href="index.html" title="GDK-PixBuf Reference Manual">
 <link rel="up" href="rn01.html" title="API Reference">
 <link rel="prev" href="gdk-pixbuf-The-GdkPixbuf-Structure.html" title="The GdkPixbuf Structure">
 <link rel="next" href="gdk-pixbuf-File-Loading.html" title="File Loading">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -42,8 +42,8 @@
 
 <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#gdk-pixbuf-ref" title="gdk_pixbuf_ref ()">gdk_pixbuf_ref</a>                      (<em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#gdk-pixbuf-unref" title="gdk_pixbuf_unref ()">gdk_pixbuf_unref</a>                    (<em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>);
-<span class="returnvalue">void</span>                (<a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#GdkPixbufDestroyNotify" title="GdkPixbufDestroyNotify ()">*GdkPixbufDestroyNotify</a>)           (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *pixels</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);
+<span class="returnvalue">void</span>                (<a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#GdkPixbufDestroyNotify" title="GdkPixbufDestroyNotify ()">*GdkPixbufDestroyNotify</a>)           (<em class="parameter"><code><span class="type">guchar</span> *pixels</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -95,8 +95,11 @@ responsibility to free the pixel array.
 <p>
 Adds a reference to a pixbuf.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>pixbuf</code></em> :</span></p></td>
@@ -120,8 +123,11 @@ Adds a reference to a pixbuf.
 <p>
 Removes a reference from a pixbuf.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>pixbuf</code></em> :</span></p></td>
 <td>A pixbuf.</td>
@@ -131,8 +137,8 @@ Removes a reference from a pixbuf.
 <hr>
 <div class="refsect2">
 <a name="GdkPixbufDestroyNotify"></a><h3>GdkPixbufDestroyNotify ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                (*GdkPixbufDestroyNotify)           (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *pixels</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                (*GdkPixbufDestroyNotify)           (<em class="parameter"><code><span class="type">guchar</span> *pixels</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>);</pre>
 <p>
 A function of this type is responsible for freeing the pixel array
 of a pixbuf.  The <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-data" title="gdk_pixbuf_new_from_data ()"><code class="function">gdk_pixbuf_new_from_data()</code></a> function lets you
@@ -141,16 +147,22 @@ created from it; in this case you will need to pass in a function
 of <a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#GdkPixbufDestroyNotify" title="GdkPixbufDestroyNotify ()"><span class="type">GdkPixbufDestroyNotify</span></a> so that the pixel data can be freed
 when the pixbuf is finalized.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>pixels</code></em> :</span></p></td>
-<td>The pixel array of the pixbuf that is being finalized.</td>
+<td>The pixel array of the pixbuf
+that is being finalized. <span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> guint8]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>User closure data.</td>
+<td>User closure data. <span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span>
+</td>
 </tr>
 </tbody>
 </table></div>
@@ -163,6 +175,6 @@ when the pixbuf is finalized.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>

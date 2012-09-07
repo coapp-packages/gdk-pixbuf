@@ -8,8 +8,8 @@
 	>
 	<Tool
 		Name="VCCLCompilerTool"
-		AdditionalIncludeDirectories="..\..\..;$(GlibEtcInstallRoot)\lib\glib-2.0\include;$(GlibEtcInstallRoot)\include\glib-2.0;$(GlibEtcInstallRoot)\include;$(GlibEtcInstallRoot)\include\cairo;$(GlibEtcInstallRoot)\include\atk-1.0;$(GlibEtcInstallRoot)\include\pango-1.0"
-		PreprocessorDefinitions="HAVE_CONFIG_H;G_DISABLE_DEPRECATED;G_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES"
+		AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf;$(GlibEtcInstallRoot)\lib\glib-2.0\include;$(GlibEtcInstallRoot)\include\glib-2.0;$(GlibEtcInstallRoot)\include;$(GlibEtcInstallRoot)\include\cairo;$(GlibEtcInstallRoot)\include\atk-1.0;$(GlibEtcInstallRoot)\include\pango-1.0"
+		PreprocessorDefinitions="HAVE_CONFIG_H;G_DISABLE_SINGLE_INCLUDES;GDK_PIXBUF_DISABLE_SINGLE_INCLUDES"
 		ForcedIncludeFiles="msvc_recommended_pragmas.h"
 	/>
 	<Tool
@@ -108,7 +108,7 @@ copy $(ConfigurationName)\$(PlatformName)\bin\*-$(GdkPixbufApiVersion).lib $(Out
 	/>
 	<UserMacro
 		Name="GdkPixbufGenerateGdkPixbufDef"
-		Value="echo EXPORTS &gt;&quot;..\..\..\gdk-pixbuf\gdk-pixbuf.def&quot; &amp;&amp; cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols &gt;&gt;&quot;..\..\..\gdk-pixbuf\gdk-pixbuf.def&quot;"
+		Value="echo EXPORTS &gt; $(IntDir)\gdk-pixbuf.def &amp;&amp; cl /EP -DG_OS_WIN32 -DINCLUDE_VARIABLES -DALL_FILES -DG_GNUC_CONST= -DG_GNUC_NULL_TERMINATED= ..\..\..\gdk-pixbuf\gdk-pixbuf.symbols &gt;&gt;$(IntDir)gdk-pixbuf.def"
 	/>
 	<UserMacro
 		Name="GdkPixbufLibtoolCompatibleDllPrefix"

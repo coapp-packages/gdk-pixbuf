@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Image Data in Memory</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
 <link rel="home" href="index.html" title="GDK-PixBuf Reference Manual">
 <link rel="up" href="rn01.html" title="API Reference">
 <link rel="prev" href="gdk-pixbuf-File-saving.html" title="File saving">
 <link rel="next" href="gdk-pixbuf-Inline-data.html" title="Inline data">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.18.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -41,24 +41,24 @@
 #include &lt;gdk-pixbuf/gdk-pixbuf.h&gt;
 
 <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new" title="gdk_pixbuf_new ()">gdk_pixbuf_new</a>                      (<em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkColorspace" title="enum GdkColorspace"><span class="type">GdkColorspace</span></a> colorspace</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_alpha</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> has_alpha</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> bits_per_sample</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> width</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> height</code></em>);
-<a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-data" title="gdk_pixbuf_new_from_data ()">gdk_pixbuf_new_from_data</a>            (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *data</code></em>,
+<a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-data" title="gdk_pixbuf_new_from_data ()">gdk_pixbuf_new_from_data</a>            (<em class="parameter"><code>const <span class="type">guchar</span> *data</code></em>,
                                                          <em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkColorspace" title="enum GdkColorspace"><span class="type">GdkColorspace</span></a> colorspace</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_alpha</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> has_alpha</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> bits_per_sample</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> width</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> height</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> rowstride</code></em>,
                                                          <em class="parameter"><code><a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#GdkPixbufDestroyNotify" title="GdkPixbufDestroyNotify ()"><span class="type">GdkPixbufDestroyNotify</span></a> destroy_fn</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> destroy_fn_data</code></em>);
+                                                         <em class="parameter"><code><span class="type">gpointer</span> destroy_fn_data</code></em>);
 <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-xpm-data" title="gdk_pixbuf_new_from_xpm_data ()">gdk_pixbuf_new_from_xpm_data</a>        (<em class="parameter"><code>const <span class="type">char</span> **data</code></em>);
-<a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-inline" title="gdk_pixbuf_new_from_inline ()">gdk_pixbuf_new_from_inline</a>          (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> data_length</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> copy_pixels</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-inline" title="gdk_pixbuf_new_from_inline ()">gdk_pixbuf_new_from_inline</a>          (<em class="parameter"><code><span class="type">gint</span> data_length</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">guint8</span> *data</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> copy_pixels</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);
 <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-subpixbuf" title="gdk_pixbuf_new_subpixbuf ()">gdk_pixbuf_new_subpixbuf</a>            (<em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *src_pixbuf</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> src_y</code></em>,
@@ -77,7 +77,7 @@ the destroy notification function that will be called when the
 data buffer needs to be freed; this will happen when a <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a>
 is finalized by the reference counting functions If you have a
 chunk of static data compiled into your application, you can pass
-in <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> as the destroy notification function so that the data
+in <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> as the destroy notification function so that the data
 will not be freed.
 </p>
 <p>
@@ -104,7 +104,7 @@ pixel data in memory and create a new <a class="link" href="gdk-pixbuf-The-GdkPi
 <div class="refsect2">
 <a name="gdk-pixbuf-new"></a><h3>gdk_pixbuf_new ()</h3>
 <pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         gdk_pixbuf_new                      (<em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkColorspace" title="enum GdkColorspace"><span class="type">GdkColorspace</span></a> colorspace</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_alpha</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> has_alpha</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> bits_per_sample</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> width</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> height</code></em>);</pre>
@@ -113,8 +113,11 @@ Creates a new <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkP
 buffer has an optimal rowstride.  Note that the buffer is not cleared;
 you will have to fill it completely yourself.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>colorspace</code></em> :</span></p></td>
@@ -139,7 +142,7 @@ you will have to fill it completely yourself.
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>A newly-created <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> with a reference count of 1, or
-<a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if not enough memory could be allocated for the image buffer.</td>
+<a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if not enough memory could be allocated for the image buffer.</td>
 </tr>
 </tbody>
 </table></div>
@@ -147,25 +150,28 @@ you will have to fill it completely yourself.
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-new-from-data"></a><h3>gdk_pixbuf_new_from_data ()</h3>
-<pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         gdk_pixbuf_new_from_data            (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *data</code></em>,
+<pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         gdk_pixbuf_new_from_data            (<em class="parameter"><code>const <span class="type">guchar</span> *data</code></em>,
                                                          <em class="parameter"><code><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkColorspace" title="enum GdkColorspace"><span class="type">GdkColorspace</span></a> colorspace</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> has_alpha</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> has_alpha</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> bits_per_sample</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> width</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> height</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> rowstride</code></em>,
                                                          <em class="parameter"><code><a class="link" href="gdk-pixbuf-Reference-Counting-and-Memory-Mangement.html#GdkPixbufDestroyNotify" title="GdkPixbufDestroyNotify ()"><span class="type">GdkPixbufDestroyNotify</span></a> destroy_fn</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> destroy_fn_data</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gpointer</span> destroy_fn_data</code></em>);</pre>
 <p>
 Creates a new <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> out of in-memory image data.  Currently only RGB
 images with 8 bits per sample are supported.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>Image data in 8-bit/sample packed format. <span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> char]</span>
+<td>Image data in 8-bit/sample packed format. <span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym>]</span>
 </td>
 </tr>
 <tr>
@@ -195,7 +201,7 @@ images with 8 bits per sample are supported.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>destroy_fn</code></em> :</span></p></td>
 <td>Function used to free the data when the pixbuf's reference count
-drops to zero, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if the data should not be freed. <span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>]</span>
+drops to zero, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if the data should not be freed. <span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>][<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
@@ -219,12 +225,16 @@ drops to zero, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html
 Creates a new pixbuf by parsing XPM data in memory.  This data is commonly
 the result of including an XPM file into a program's C source.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>Pointer to inline XPM data.</td>
+<td>Pointer to inline XPM data. <span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> zero-terminated=1]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
@@ -236,10 +246,10 @@ the result of including an XPM file into a program's C source.
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-new-from-inline"></a><h3>gdk_pixbuf_new_from_inline ()</h3>
-<pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         gdk_pixbuf_new_from_inline          (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> data_length</code></em>,
-                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *data</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> copy_pixels</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         gdk_pixbuf_new_from_inline          (<em class="parameter"><code><span class="type">gint</span> data_length</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">guint8</span> *data</code></em>,
+                                                         <em class="parameter"><code><span class="type">gboolean</span> copy_pixels</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **error</code></em>);</pre>
 <p>
 Create a <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> from a flat representation that is suitable for
 storing as inline data in a program. This is useful if you want to
@@ -270,9 +280,9 @@ In almost all cases, you should pass the <code class="option">--raw</code> flag 
 <p>
 For the typical case where the inline pixbuf is read-only static data,
 you don't need to copy the pixel data unless you intend to write to
-it, so you can pass <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> for <em class="parameter"><code>copy_pixels</code></em>.  (If you pass 
+it, so you can pass <code class="literal">FALSE</code> for <em class="parameter"><code>copy_pixels</code></em>.  (If you pass 
 <code class="option">--rle</code> to <span class="command"><strong>gdk-pixbuf-csource</strong></span>, a copy 
-will be made even if <em class="parameter"><code>copy_pixels</code></em> is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, so using this option is 
+will be made even if <em class="parameter"><code>copy_pixels</code></em> is <code class="literal">FALSE</code>, so using this option is 
 generally a bad idea.)
 </p>
 <p>
@@ -285,7 +295,7 @@ since things will always succeed:
     <tbody>
       <tr>
         <td class="listing_lines" align="right"><pre>1</pre></td>
-        <td class="listing_code"><pre class="programlisting"><span class="normal">pixbuf </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-inline">gdk_pixbuf_new_from_inline</a></span><span class="normal"> </span><span class="symbol">(-</span><span class="number">1</span><span class="symbol">,</span><span class="normal"> myimage_inline</span><span class="symbol">,</span><span class="normal"> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS">FALSE</a></span><span class="symbol">,</span><span class="normal"> <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span></pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="normal">pixbuf </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="gdk-pixbuf-Image-Data-in-Memory.html#gdk-pixbuf-new-from-inline">gdk_pixbuf_new_from_inline</a></span><span class="normal"> </span><span class="symbol">(-</span><span class="number">1</span><span class="symbol">,</span><span class="normal"> myimage_inline</span><span class="symbol">,</span><span class="normal"> FALSE</span><span class="symbol">,</span><span class="normal"> <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS">NULL</a></span><span class="symbol">);</span></pre></td>
       </tr>
     </tbody>
   </table>
@@ -298,8 +308,11 @@ For non-const inline data, you could get out of memory. For untrusted
 inline data located at runtime, you could have corrupt inline data in 
 addition.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data_length</code></em> :</span></p></td>
@@ -308,7 +321,9 @@ disable length checks</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>Byte data containing a serialized <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> structure</td>
+<td>Byte data containing a
+serialized <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> structure. <span class="annotation">[<acronym title="Parameter points to an array of items."><span class="acronym">array</span></acronym> length=data_length]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>copy_pixels</code></em> :</span></p></td>
@@ -318,12 +333,12 @@ disable length checks</td>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> return location, may be <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore errors</td>
+<span class="type">GError</span> return location, may be <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> to ignore errors</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>A newly-created <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> structure with a reference,
-count of 1, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if an error occurred.</td>
+count of 1, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if an error occurred.</td>
 </tr>
 </tbody>
 </table></div>
@@ -344,8 +359,11 @@ The new pixbuf holds a reference to <em class="parameter"><code>src_pixbuf</code
 <em class="parameter"><code>src_pixbuf</code></em> will not be finalized until the new pixbuf
 is finalized.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>src_pixbuf</code></em> :</span></p></td>
@@ -388,8 +406,11 @@ is finalized.
 Creates a new <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> with a copy of the information in the specified
 <em class="parameter"><code>pixbuf</code></em>.
 </p>
-<div class="variablelist"><table border="0">
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
 <col align="left" valign="top">
+<col>
+</colgroup>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>pixbuf</code></em> :</span></p></td>
@@ -397,7 +418,7 @@ Creates a new <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkP
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>A newly-created pixbuf with a reference count of 1, or <a href="/usr/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+<td>A newly-created pixbuf with a reference count of 1, or <a href="/home/mclasen/gnome/share/gtk-doc/html/liboil/liboil-liboiljunk.html#NULL--CAPS"><code class="literal">NULL</code></a> if
 not enough memory could be allocated. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
 </td>
 </tr>
@@ -412,6 +433,6 @@ gdk_pixbuf_finalize().
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.18.1</div>
 </body>
 </html>
