@@ -93,6 +93,7 @@ files[exes] {
 
     include: {
         "gdk-pixbuf-csource.exe",
+        "gdk-pixbuf-pixdata.exe",
 		// "gdk-pixbuf-query-loaders.exe", // This is only useful for plugins, and we don't know how plugins will work yet.
     };
 

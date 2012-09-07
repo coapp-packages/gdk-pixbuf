@@ -8,7 +8,7 @@
 #product-info {
     product-name: "gdk-pixbuf";
     version: "${package-version}";
-    original-source-location: "http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.24/gdk-pixbuf-2.24.1.tar.xz";
+    original-source-location: "http://ftp.acc.umu.se/pub/GNOME/sources/gdk-pixbuf/2.26/gdk-pixbuf-2.26.3.tar.xz";
     original-source-website: "http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf";
     license: "LGPL2 or greater";
     packager: "Vincent Povirk <madewokherd@gmail.com>";
@@ -27,6 +27,7 @@ x86 {
     targets: {
         @"vs10\Win32\bin\gdk-pixbuf-csource.exe",
         @"vs10\Win32\bin\gdk-pixbuf-query-loaders.exe",
+        @"vs10\Win32\bin\gdk-pixbuf-pixdata.exe",
         @"vs10\Win32\bin\gdk_pixbuf-2-vs10.dll",
         @"vs10\Win32\lib\gdk_pixbuf-2.0.lib",
     };
