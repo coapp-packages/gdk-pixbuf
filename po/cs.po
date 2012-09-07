@@ -1,5 +1,5 @@
-# Czech translation of GTK+.
-# Copyright (C) 1999, 2006, 2007, 2008, 2009, 2010 the author(s) of GTK+.
+# Czech translation of gdk-pixbuf.
+# Copyright (C) 1999, 2006, 2007, 2008, 2009, 2010 the author(s) of gdk-pixbuf.
 # Copyright (C) 2003, 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
 # Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
 # This file is distributed under the same license as the gtk+ package.
@@ -12,15 +12,15 @@
 # Jakub Friedl <jfriedl@suse.cz>, 2006.
 # Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
 # Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009, 2010.
-# Marek Černocký <marek@manet.cz>, 2010.
+# Marek Černocký <marek@manet.cz>, 2010, 2011, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gtk+\n"
+"Project-Id-Version: gdk-pixbuf\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gdk-"
 "pixbuf\n"
-"POT-Creation-Date: 2011-12-16 19:18-0500\n"
-"PO-Revision-Date: 2010-11-07 21:05+0100\n"
+"POT-Creation-Date: 2012-08-20 16:13-0400\n"
+"PO-Revision-Date: 2012-02-17 13:58+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -30,19 +30,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 1.0\n"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:146 gdk-pixbuf/gdk-pixbuf-io.c:1070
-#: gdk-pixbuf/gdk-pixbuf-io.c:1336
+#: gdk-pixbuf/gdk-pixbuf-animation.c:147 gdk-pixbuf/gdk-pixbuf-io.c:1088
+#: gdk-pixbuf/gdk-pixbuf-io.c:1354
 #, c-format
 msgid "Failed to open file '%s': %s"
 msgstr "Nelze otevřít soubor „%s“: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:159 gdk-pixbuf/gdk-pixbuf-io.c:1082
+#: gdk-pixbuf/gdk-pixbuf-animation.c:160 gdk-pixbuf/gdk-pixbuf-io.c:1100
 #, c-format
 msgid "Image file '%s' contains no data"
 msgstr "Soubor obrázku „%s“ neobsahuje data"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:201 gdk-pixbuf/gdk-pixbuf-io.c:1118
-#: gdk-pixbuf/gdk-pixbuf-io.c:1388
+#: gdk-pixbuf/gdk-pixbuf-animation.c:202 gdk-pixbuf/gdk-pixbuf-io.c:1136
+#: gdk-pixbuf/gdk-pixbuf-io.c:1406
 #, c-format
 msgid ""
 "Failed to load image '%s': reason not known, probably a corrupt image file"
@@ -50,7 +50,7 @@ msgstr ""
 "Nelze načíst obrázek „%s“: důvod není znám, pravděpodobně poškozený soubor "
 "obrázku"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:234
+#: gdk-pixbuf/gdk-pixbuf-animation.c:235
 #, c-format
 msgid ""
 "Failed to load animation '%s': reason not known, probably a corrupt "
@@ -59,12 +59,12 @@ msgstr ""
 "Nelze načíst animaci „%s“: důvod není znám, pravděpodobně poškozený soubor "
 "animace"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:803
+#: gdk-pixbuf/gdk-pixbuf-io.c:809
 #, c-format
 msgid "Unable to load image-loading module: %s: %s"
 msgstr "Nelze načíst modul pro čtení obrázků: %s: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:818
+#: gdk-pixbuf/gdk-pixbuf-io.c:824
 #, c-format
 msgid ""
 "Image-loading module %s does not export the proper interface; perhaps it's "
@@ -73,53 +73,53 @@ msgstr ""
 "Modul pro načítání obrázků %s neexportuje správné rozhraní; není náhodou z "
 "jiné verze gdk-pixbuf?"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:827 gdk-pixbuf/gdk-pixbuf-io.c:878
+#: gdk-pixbuf/gdk-pixbuf-io.c:833 gdk-pixbuf/gdk-pixbuf-io.c:884
 #, c-format
 msgid "Image type '%s' is not supported"
 msgstr "Typ obrázku „%s“ není podporován"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:951
+#: gdk-pixbuf/gdk-pixbuf-io.c:969
 #, c-format
 msgid "Couldn't recognize the image file format for file '%s'"
-msgstr "Nelze rozpoznat formát obrázku u souboru „%s“"
+msgstr "Nelze rozpoznat formát obrázku v souboru „%s“"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:959
+#: gdk-pixbuf/gdk-pixbuf-io.c:977
 msgid "Unrecognized image file format"
 msgstr "Nerozpoznaný formát obrázku"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1127
+#: gdk-pixbuf/gdk-pixbuf-io.c:1145
 #, c-format
 msgid "Failed to load image '%s': %s"
 msgstr "Nelze načíst obrázek „%s“: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1904 gdk-pixbuf/io-gdip-utils.c:888
+#: gdk-pixbuf/gdk-pixbuf-io.c:2033 gdk-pixbuf/io-gdip-utils.c:888
 #, c-format
 msgid "Error writing to image file: %s"
 msgstr "Chyba při zápisu do souboru obrázku: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1949 gdk-pixbuf/gdk-pixbuf-io.c:2079
+#: gdk-pixbuf/gdk-pixbuf-io.c:2078 gdk-pixbuf/gdk-pixbuf-io.c:2208
 #, c-format
 msgid "This build of gdk-pixbuf does not support saving the image format: %s"
 msgstr "Toto sestavení gdk-pixbuf nepodporuje ukládání obrázku ve formátu: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1983
+#: gdk-pixbuf/gdk-pixbuf-io.c:2112
 msgid "Insufficient memory to save image to callback"
 msgstr "Nedostatek paměti k uložení obrázku pro zpětné volání"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1996
+#: gdk-pixbuf/gdk-pixbuf-io.c:2125
 msgid "Failed to open temporary file"
 msgstr "Nelze otevřít dočasný soubor"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2022
+#: gdk-pixbuf/gdk-pixbuf-io.c:2151
 msgid "Failed to read from temporary file"
 msgstr "Z dočasného souboru nelze číst"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2275
+#: gdk-pixbuf/gdk-pixbuf-io.c:2404
 #, c-format
 msgid "Failed to open '%s' for writing: %s"
 msgstr "Nelze otevřít „%s“ pro zápis: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2301
+#: gdk-pixbuf/gdk-pixbuf-io.c:2430
 #, c-format
 msgid ""
 "Failed to close '%s' while writing image, all data may not have been saved: "
@@ -127,15 +127,15 @@ msgid ""
 msgstr ""
 "Nelze zavřít „%s“ během zápisu obrázku, možná nejsou uložena všechna data: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2521 gdk-pixbuf/gdk-pixbuf-io.c:2572
+#: gdk-pixbuf/gdk-pixbuf-io.c:2651 gdk-pixbuf/gdk-pixbuf-io.c:2703
 msgid "Insufficient memory to save image into a buffer"
 msgstr "Nedostatek paměti k uložení obrázku do vyrovnávací paměti"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2618
+#: gdk-pixbuf/gdk-pixbuf-io.c:2749
 msgid "Error writing to image stream"
 msgstr "Chyba při zápisu do obrazového proudu"
 
-#: gdk-pixbuf/gdk-pixbuf-loader.c:395
+#: gdk-pixbuf/gdk-pixbuf-loader.c:397
 #, c-format
 msgid ""
 "Internal error: Image loader module '%s' failed to complete an operation, "
@@ -144,24 +144,24 @@ msgstr ""
 "Interní chyba: Modulu pro načítání obrázku „%s“ se nezdařilo dokončit "
 "operaci, ale k tomuto selhání neudal důvod"
 
-#: gdk-pixbuf/gdk-pixbuf-loader.c:437
+#: gdk-pixbuf/gdk-pixbuf-loader.c:439
 #, c-format
 msgid "Incremental loading of image type '%s' is not supported"
 msgstr "Postupné načítání obrázku typu „%s“ není podporováno"
 
-#: gdk-pixbuf/gdk-pixdata.c:159
+#: gdk-pixbuf/gdk-pixdata.c:160
 msgid "Image header corrupt"
 msgstr "Záhlaví obrázku je poškozeno"
 
-#: gdk-pixbuf/gdk-pixdata.c:164
+#: gdk-pixbuf/gdk-pixdata.c:165
 msgid "Image format unknown"
 msgstr "Neznámý formát obrázku"
 
-#: gdk-pixbuf/gdk-pixdata.c:169 gdk-pixbuf/gdk-pixdata.c:500
+#: gdk-pixbuf/gdk-pixdata.c:170 gdk-pixbuf/gdk-pixdata.c:502
 msgid "Image pixel data corrupt"
-msgstr "Data pixelů obrázku jsou poškozena"
+msgstr "Pixelová data obrázku jsou poškozena"
 
-#: gdk-pixbuf/gdk-pixdata.c:444
+#: gdk-pixbuf/gdk-pixdata.c:446
 #, c-format
 msgid "failed to allocate image buffer of %u byte"
 msgid_plural "failed to allocate image buffer of %u bytes"
@@ -173,25 +173,21 @@ msgstr[2] "nelze alokovat paměť pro obrázek o velikosti %u bajtů"
 msgid "Unexpected icon chunk in animation"
 msgstr "Neočekávaný blok ikony v animaci"
 
-#: gdk-pixbuf/io-ani.c:337
-msgid "Unsupported animation type"
-msgstr "Nepodporovaný typ animace"
-
-#: gdk-pixbuf/io-ani.c:348 gdk-pixbuf/io-ani.c:406 gdk-pixbuf/io-ani.c:432
-#: gdk-pixbuf/io-ani.c:455 gdk-pixbuf/io-ani.c:482 gdk-pixbuf/io-ani.c:569
+#: gdk-pixbuf/io-ani.c:342 gdk-pixbuf/io-ani.c:400 gdk-pixbuf/io-ani.c:426
+#: gdk-pixbuf/io-ani.c:449 gdk-pixbuf/io-ani.c:476 gdk-pixbuf/io-ani.c:563
 msgid "Invalid header in animation"
 msgstr "Neplatné záhlaví v animaci"
 
-#: gdk-pixbuf/io-ani.c:358 gdk-pixbuf/io-ani.c:380 gdk-pixbuf/io-ani.c:464
-#: gdk-pixbuf/io-ani.c:491 gdk-pixbuf/io-ani.c:542 gdk-pixbuf/io-ani.c:614
+#: gdk-pixbuf/io-ani.c:352 gdk-pixbuf/io-ani.c:374 gdk-pixbuf/io-ani.c:458
+#: gdk-pixbuf/io-ani.c:485 gdk-pixbuf/io-ani.c:536 gdk-pixbuf/io-ani.c:608
 msgid "Not enough memory to load animation"
 msgstr "Nedostatek paměti k načtení animace"
 
-#: gdk-pixbuf/io-ani.c:398 gdk-pixbuf/io-ani.c:424 gdk-pixbuf/io-ani.c:443
+#: gdk-pixbuf/io-ani.c:392 gdk-pixbuf/io-ani.c:418 gdk-pixbuf/io-ani.c:437
 msgid "Malformed chunk in animation"
 msgstr "Chybně vytvořený blok v animaci"
 
-#: gdk-pixbuf/io-ani.c:711
+#: gdk-pixbuf/io-ani.c:705
 msgid "The ANI image format"
 msgstr "Formát obrázku ANI"
 
@@ -228,59 +224,137 @@ msgstr "Nelze zapisovat do souboru BMP"
 msgid "The BMP image format"
 msgstr "Formát obrázku BMP"
 
-#: gdk-pixbuf/io-gif.c:221
+#: gdk-pixbuf/io-gdip-emf.c:59
+msgid "The EMF image format"
+msgstr "Formát obrázku EMF"
+
+#: gdk-pixbuf/io-gdip-gif.c:80 gdk-pixbuf/io-gif.c:1719
+msgid "The GIF image format"
+msgstr "Formát obrázku GIF"
+
+#: gdk-pixbuf/io-gdip-ico.c:59 gdk-pixbuf/io-ico.c:1271
+msgid "The ICO image format"
+msgstr "Formát obrázku ICO"
+
+#: gdk-pixbuf/io-gdip-jpeg.c:53 gdk-pixbuf/io-jpeg.c:1139
+#, c-format
+msgid ""
+"JPEG quality must be a value between 0 and 100; value '%s' could not be "
+"parsed."
+msgstr ""
+"Kvalita JPEG musí být hodnota mezi 0 a 100; hodnotu „%s“ nebylo možné "
+"zpracovat."
+
+#: gdk-pixbuf/io-gdip-jpeg.c:68 gdk-pixbuf/io-jpeg.c:1154
+#, c-format
+msgid ""
+"JPEG quality must be a value between 0 and 100; value '%d' is not allowed."
+msgstr ""
+"Kvalita JPEG musí být hodnota mezi 0 a 100; hodnota „%d“ není povolena."
+
+#: gdk-pixbuf/io-gdip-jpeg.c:136 gdk-pixbuf/io-jpeg.c:1316
+msgid "The JPEG image format"
+msgstr "Formát obrázku JPEG"
+
+#: gdk-pixbuf/io-gdip-utils.c:154
+#, c-format
+msgid "Could not allocate memory: %s"
+msgstr "Nelze alokovat paměť: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:179 gdk-pixbuf/io-gdip-utils.c:293
+#: gdk-pixbuf/io-gdip-utils.c:333
+#, c-format
+msgid "Could not create stream: %s"
+msgstr "Nelze vytvořit proud: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:193
+#, c-format
+msgid "Could not seek stream: %s"
+msgstr "Nelze nastavit pozici v proudu: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:205
+#, c-format
+msgid "Could not read from stream: %s"
+msgstr "Z proudu nelze číst: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:617 gdk-pixbuf/io-gdip-utils.c:752
+msgid "Couldn't load bitmap"
+msgstr "Nelze načíst rastrový obrázek"
+
+#: gdk-pixbuf/io-gdip-utils.c:774
+msgid "Couldn't load metafile"
+msgstr "Nelze načíst metasoubor"
+
+#: gdk-pixbuf/io-gdip-utils.c:933
+msgid "Unsupported image format for GDI+"
+msgstr "Nepodporovaný formát obrázku GDI+"
+
+#: gdk-pixbuf/io-gdip-utils.c:940
+msgid "Couldn't save"
+msgstr "Nelze uložit"
+
+#: gdk-pixbuf/io-gdip-wmf.c:58
+msgid "The WMF image format"
+msgstr "Formát obrázku WMF"
+
+#: gdk-pixbuf/io-gif.c:222
 #, c-format
 msgid "Failure reading GIF: %s"
 msgstr "Chyba při čtení formátu GIF: %s"
 
-#: gdk-pixbuf/io-gif.c:495 gdk-pixbuf/io-gif.c:1482 gdk-pixbuf/io-gif.c:1648
+#: gdk-pixbuf/io-gif.c:496 gdk-pixbuf/io-gif.c:1501 gdk-pixbuf/io-gif.c:1668
 msgid "GIF file was missing some data (perhaps it was truncated somehow?)"
 msgstr "V souboru GIF chybí některá data (možná byl nějakým způsobem zkrácen?)"
 
-#: gdk-pixbuf/io-gif.c:504
+#: gdk-pixbuf/io-gif.c:505
 #, c-format
 msgid "Internal error in the GIF loader (%s)"
 msgstr "Interní chyba v zavaděči GIF (%s)"
 
-#: gdk-pixbuf/io-gif.c:578
+#: gdk-pixbuf/io-gif.c:579
 msgid "Stack overflow"
 msgstr "Přetečení zásobníku"
 
-#: gdk-pixbuf/io-gif.c:638
+#: gdk-pixbuf/io-gif.c:639
 msgid "GIF image loader cannot understand this image."
 msgstr "Zavaděč obrázků GIF nerozumí tomuto obrázku."
 
-#: gdk-pixbuf/io-gif.c:667
+#: gdk-pixbuf/io-gif.c:668
 msgid "Bad code encountered"
 msgstr "Nalezen chybný kód"
 
-#: gdk-pixbuf/io-gif.c:677
+#: gdk-pixbuf/io-gif.c:678
 msgid "Circular table entry in GIF file"
 msgstr "Cyklická položka tabulky v souboru GIF"
 
-#: gdk-pixbuf/io-gif.c:865 gdk-pixbuf/io-gif.c:1468 gdk-pixbuf/io-gif.c:1521
-#: gdk-pixbuf/io-gif.c:1636
+#: gdk-pixbuf/io-gif.c:866 gdk-pixbuf/io-gif.c:1487 gdk-pixbuf/io-gif.c:1540
+#: gdk-pixbuf/io-gif.c:1656
 msgid "Not enough memory to load GIF file"
 msgstr "Nedostatek paměti k načtení obrázku GIF"
 
-#: gdk-pixbuf/io-gif.c:959
+#: gdk-pixbuf/io-gif.c:960
 msgid "Not enough memory to composite a frame in GIF file"
 msgstr "Nedostatek paměti ke složení políčka v souboru GIF"
 
-#: gdk-pixbuf/io-gif.c:1131
+#: gdk-pixbuf/io-gif.c:1132
 msgid "GIF image is corrupt (incorrect LZW compression)"
 msgstr "Obrázek GIF je poškozen (chybná komprese LZW)"
 
-#: gdk-pixbuf/io-gif.c:1181
+#: gdk-pixbuf/io-gif.c:1182
 msgid "File does not appear to be a GIF file"
 msgstr "Soubor nevypadá jako soubor GIF"
 
-#: gdk-pixbuf/io-gif.c:1193
+#: gdk-pixbuf/io-gif.c:1194
 #, c-format
 msgid "Version %s of the GIF file format is not supported"
 msgstr "Verze %s formátu souborů GIF není podporována"
 
-#: gdk-pixbuf/io-gif.c:1302
+#: gdk-pixbuf/io-gif.c:1241
+#, fuzzy
+msgid "Resulting GIF image has zero size"
+msgstr "Obrázek má nulovou šířku"
+
+#: gdk-pixbuf/io-gif.c:1320
 msgid ""
 "GIF image has no global colormap, and a frame inside it has no local "
 "colormap."
@@ -288,13 +362,22 @@ msgstr ""
 "Obrázek GIF neobsahuje globální mapu barev a políčko v něm neobsahuje "
 "lokální mapu."
 
-#: gdk-pixbuf/io-gif.c:1543
+#: gdk-pixbuf/io-gif.c:1563
 msgid "GIF image was truncated or incomplete."
 msgstr "Obrázek GIF byl zkrácen nebo není úplný."
 
-#: gdk-pixbuf/io-gif.c:1699 gdk-pixbuf/io-gdip-gif.c:80
-msgid "The GIF image format"
-msgstr "Formát obrázku GIF"
+#: gdk-pixbuf/io-icns.c:347
+#, c-format
+msgid "Error reading ICNS image: %s"
+msgstr "Chyba při čtení obrázku ICNS: %s"
+
+#: gdk-pixbuf/io-icns.c:364
+msgid "Could not decode ICNS file"
+msgstr "Nelze dekódovat soubor ICNS"
+
+#: gdk-pixbuf/io-icns.c:397
+msgid "The ICNS image format"
+msgstr "Formát obrázku ICNS"
 
 #: gdk-pixbuf/io-ico.c:228 gdk-pixbuf/io-ico.c:242 gdk-pixbuf/io-ico.c:291
 #: gdk-pixbuf/io-ico.c:302 gdk-pixbuf/io-ico.c:395
@@ -338,23 +421,6 @@ msgstr "Aktivní bod kurzoru mimo obrázek"
 #, c-format
 msgid "Unsupported depth for ICO file: %d"
 msgstr "Nepodporovaná hloubka souboru ICO: %d"
-
-#: gdk-pixbuf/io-ico.c:1271 gdk-pixbuf/io-gdip-ico.c:59
-msgid "The ICO image format"
-msgstr "Formát obrázku ICO"
-
-#: gdk-pixbuf/io-icns.c:347
-#, c-format
-msgid "Error reading ICNS image: %s"
-msgstr "Chyba při čtení obrázku ICNS: %s"
-
-#: gdk-pixbuf/io-icns.c:364
-msgid "Could not decode ICNS file"
-msgstr "Nelze dekódovat soubor ICNS"
-
-#: gdk-pixbuf/io-icns.c:397
-msgid "The ICNS image format"
-msgstr "Formát obrázku ICNS"
 
 #: gdk-pixbuf/io-jasper.c:74
 msgid "Couldn't allocate memory for stream"
@@ -415,26 +481,6 @@ msgstr "Nelze alokovat paměť k načtení souboru JPEG"
 msgid "Transformed JPEG has zero width or height."
 msgstr "Transformovaný obrázek JPEG má nulovou výšku nebo šířku."
 
-#: gdk-pixbuf/io-jpeg.c:1139 gdk-pixbuf/io-gdip-jpeg.c:53
-#, c-format
-msgid ""
-"JPEG quality must be a value between 0 and 100; value '%s' could not be "
-"parsed."
-msgstr ""
-"Kvalita JPEG musí být hodnota mezi 0 a 100; hodnotu „%s“ nebylo možné "
-"zpracovat."
-
-#: gdk-pixbuf/io-jpeg.c:1154 gdk-pixbuf/io-gdip-jpeg.c:68
-#, c-format
-msgid ""
-"JPEG quality must be a value between 0 and 100; value '%d' is not allowed."
-msgstr ""
-"Kvalita JPEG musí být hodnota mezi 0 a 100; hodnota „%d“ není povolena."
-
-#: gdk-pixbuf/io-jpeg.c:1316 gdk-pixbuf/io-gdip-jpeg.c:136
-msgid "The JPEG image format"
-msgstr "Formát obrázku JPEG"
-
 #: gdk-pixbuf/io-pcx.c:186
 msgid "Couldn't allocate memory for header"
 msgstr "Nelze alokovat paměť pro záhlaví"
@@ -479,6 +525,14 @@ msgstr "Na konci dat PCX nenalezena paleta"
 #: gdk-pixbuf/io-pcx.c:755
 msgid "The PCX image format"
 msgstr "Formát obrázku PCX"
+
+#: gdk-pixbuf/io-pixdata.c:148
+msgid "Transformed pixbuf has zero width or height."
+msgstr "Transformovaný pixbuf má nulovou šířku nebo výšku."
+
+#: gdk-pixbuf/io-pixdata.c:186
+msgid "The GdkPixdata format"
+msgstr "Formát GdkPixdata"
 
 #: gdk-pixbuf/io-png.c:54
 msgid "Bits per channel of PNG image is invalid."
@@ -628,47 +682,56 @@ msgstr "Nedostatek paměti k načtení souboru PNM"
 msgid "The PNM/PBM/PGM/PPM image format family"
 msgstr "Rodina formátů obrázků PNM/PBM/PGM/PPM"
 
-#: gdk-pixbuf/io-qtif.c:127
+#: gdk-pixbuf/io-qtif.c:128
 msgid "Input file descriptor is NULL."
 msgstr "Vstupní popisovač souboru je nulový."
 
-#: gdk-pixbuf/io-qtif.c:142
+#: gdk-pixbuf/io-qtif.c:143
 msgid "Failed to read QTIF header"
 msgstr "Nezdařilo se čtení záhlaví QTIF"
 
-#: gdk-pixbuf/io-qtif.c:151 gdk-pixbuf/io-qtif.c:181 gdk-pixbuf/io-qtif.c:445
+#: gdk-pixbuf/io-qtif.c:152 gdk-pixbuf/io-qtif.c:189 gdk-pixbuf/io-qtif.c:459
 #, c-format
-msgid "QTIF atom size too large (%d bytes)"
-msgstr "Velikost QTIF atom je příliš vysoká (%d bajtů)"
+msgid "QTIF atom size too large (%d byte)"
+msgid_plural "QTIF atom size too large (%d bytes)"
+msgstr[0] "Velikost QTIF atom je příliš vysoká (%d bajt)"
+msgstr[1] "Velikost QTIF atom je příliš vysoká (%d bajty)"
+msgstr[2] "Velikost QTIF atom je příliš vysoká (%d bajtů)"
 
-#: gdk-pixbuf/io-qtif.c:171
+#: gdk-pixbuf/io-qtif.c:175
 #, c-format
-msgid "Failed to allocate %d bytes for file read buffer"
-msgstr "Nelze alokovat %d bajtů pro vyrovnávací paměť čtení souboru"
+msgid "Failed to allocate %d byte for file read buffer"
+msgid_plural "Failed to allocate %d bytes for file read buffer"
+msgstr[0] "Nelze alokovat %d bajt pro vyrovnávací paměť čtení souboru"
+msgstr[1] "Nelze alokovat %d bajty pro vyrovnávací paměť čtení souboru"
+msgstr[2] "Nelze alokovat %d bajtů pro vyrovnávací paměť čtení souboru"
 
-#: gdk-pixbuf/io-qtif.c:195
+#: gdk-pixbuf/io-qtif.c:206
 #, c-format
 msgid "File error when reading QTIF atom: %s"
 msgstr "Chyba při čtení QTIF atom: %s"
 
-#: gdk-pixbuf/io-qtif.c:232
+#: gdk-pixbuf/io-qtif.c:243
 #, c-format
-msgid "Failed to skip the next %d bytes with seek()."
-msgstr "Nezdařilo se přeskočit dalších %d bajtů pomocí seek()."
+msgid "Failed to skip the next %d byte with seek()."
+msgid_plural "Failed to skip the next %d bytes with seek()."
+msgstr[0] "Nezdařilo se přeskočit další %d bajt pomocí seek()."
+msgstr[1] "Nezdařilo se přeskočit další %d bajty pomocí seek()."
+msgstr[2] "Nezdařilo se přeskočit dalších %d bajtů pomocí seek()."
 
-#: gdk-pixbuf/io-qtif.c:256
+#: gdk-pixbuf/io-qtif.c:270
 msgid "Failed to allocate QTIF context structure."
 msgstr "Nezdařila se alokace struktury kontextu QTIF."
 
-#: gdk-pixbuf/io-qtif.c:316
+#: gdk-pixbuf/io-qtif.c:330
 msgid "Failed to create GdkPixbufLoader object."
 msgstr "Nezdařilo se vytvoření objektu GdkPixbufLoader."
 
-#: gdk-pixbuf/io-qtif.c:420
+#: gdk-pixbuf/io-qtif.c:434
 msgid "Failed to find an image data atom."
 msgstr "Nelze nalézt atom obrazových dat."
 
-#: gdk-pixbuf/io-qtif.c:601
+#: gdk-pixbuf/io-qtif.c:618
 msgid "The QTIF image format"
 msgstr "Formát obrázku QTIF"
 
@@ -829,19 +892,19 @@ msgstr "Nelze uložit zbývající část"
 msgid "The WBMP image format"
 msgstr "Formát obrázku WBMP"
 
-#: gdk-pixbuf/io-xbm.c:296
+#: gdk-pixbuf/io-xbm.c:304
 msgid "Invalid XBM file"
 msgstr "Neplatný soubor XBM"
 
-#: gdk-pixbuf/io-xbm.c:306
+#: gdk-pixbuf/io-xbm.c:314
 msgid "Insufficient memory to load XBM image file"
 msgstr "Nedostatek paměti k načtení souboru obrázku XBM"
 
-#: gdk-pixbuf/io-xbm.c:454
+#: gdk-pixbuf/io-xbm.c:462
 msgid "Failed to write to temporary file when loading XBM image"
 msgstr "Při načítání obrázku XBM se nezdařil zápis do dočasného souboru"
 
-#: gdk-pixbuf/io-xbm.c:493
+#: gdk-pixbuf/io-xbm.c:501
 msgid "The XBM image format"
 msgstr "Formát obrázku XBM"
 
@@ -885,47 +948,5 @@ msgstr "Při načítání obrázku XPM se nezdařil zápis do dočasného soubor
 msgid "The XPM image format"
 msgstr "Formát obrázku XPM"
 
-#: gdk-pixbuf/io-gdip-emf.c:59
-msgid "The EMF image format"
-msgstr "Formát obrázku EMF"
-
-#: gdk-pixbuf/io-gdip-utils.c:154
-#, c-format
-msgid "Could not allocate memory: %s"
-msgstr "Nelze alokovat paměť: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:179 gdk-pixbuf/io-gdip-utils.c:293
-#: gdk-pixbuf/io-gdip-utils.c:333
-#, c-format
-msgid "Could not create stream: %s"
-msgstr "Nelze vytvořit proud: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:193
-#, c-format
-msgid "Could not seek stream: %s"
-msgstr "Nelze nastavit pozici v proudu: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:205
-#, c-format
-msgid "Could not read from stream: %s"
-msgstr "Z proudu nelze číst: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:617 gdk-pixbuf/io-gdip-utils.c:752
-msgid "Couldn't load bitmap"
-msgstr "Nelze načíst rastrový obrázek"
-
-#: gdk-pixbuf/io-gdip-utils.c:774
-msgid "Couldn't load metafile"
-msgstr "Nelze načíst metasoubor"
-
-#: gdk-pixbuf/io-gdip-utils.c:933
-msgid "Unsupported image format for GDI+"
-msgstr "Nepodporovaný formát obrázku GDI+"
-
-#: gdk-pixbuf/io-gdip-utils.c:940
-msgid "Couldn't save"
-msgstr "Nelze uložit"
-
-#: gdk-pixbuf/io-gdip-wmf.c:58
-msgid "The WMF image format"
-msgstr "Formát obrázku WMF"
+#~ msgid "Unsupported animation type"
+#~ msgstr "Nepodporovaný typ animace"

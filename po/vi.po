@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Gtk+ 2.15.3\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gdk-"
 "pixbuf\n"
-"POT-Creation-Date: 2011-12-16 19:18-0500\n"
+"POT-Creation-Date: 2012-08-20 16:13-0400\n"
 "PO-Revision-Date: 2011-04-14 18:51+0700\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -21,25 +21,25 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: LocFactoryEditor 1.8\n"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:146 gdk-pixbuf/gdk-pixbuf-io.c:1070
-#: gdk-pixbuf/gdk-pixbuf-io.c:1336
+#: gdk-pixbuf/gdk-pixbuf-animation.c:147 gdk-pixbuf/gdk-pixbuf-io.c:1088
+#: gdk-pixbuf/gdk-pixbuf-io.c:1354
 #, c-format
 msgid "Failed to open file '%s': %s"
 msgstr "Lỗi mở tập tin « %s »': %s"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:159 gdk-pixbuf/gdk-pixbuf-io.c:1082
+#: gdk-pixbuf/gdk-pixbuf-animation.c:160 gdk-pixbuf/gdk-pixbuf-io.c:1100
 #, c-format
 msgid "Image file '%s' contains no data"
 msgstr "Tập tin ảnh « %s » không chứa dữ liệu nào"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:201 gdk-pixbuf/gdk-pixbuf-io.c:1118
-#: gdk-pixbuf/gdk-pixbuf-io.c:1388
+#: gdk-pixbuf/gdk-pixbuf-animation.c:202 gdk-pixbuf/gdk-pixbuf-io.c:1136
+#: gdk-pixbuf/gdk-pixbuf-io.c:1406
 #, c-format
 msgid ""
 "Failed to load image '%s': reason not known, probably a corrupt image file"
 msgstr "Lỗi tải tập tin ảnh « %s »: không biết sao, có lẽ tập tin ảnh bị hỏng"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:234
+#: gdk-pixbuf/gdk-pixbuf-animation.c:235
 #, c-format
 msgid ""
 "Failed to load animation '%s': reason not known, probably a corrupt "
@@ -48,12 +48,12 @@ msgstr ""
 "Lỗi tải tập tin hoạt cảnh « %s »: không biết sao, có lẽ tập tin hoạt cảnh bị "
 "hỏng"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:803
+#: gdk-pixbuf/gdk-pixbuf-io.c:809
 #, c-format
 msgid "Unable to load image-loading module: %s: %s"
 msgstr "Không thể tải mô-đun tải ảnh: %s: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:818
+#: gdk-pixbuf/gdk-pixbuf-io.c:824
 #, c-format
 msgid ""
 "Image-loading module %s does not export the proper interface; perhaps it's "
@@ -62,68 +62,68 @@ msgstr ""
 "Mô-đun tải ảnh %s không có giao diện thích hợp; có lẽ do từ một phiên bản "
 "gdk-pixbuf khác?"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:827 gdk-pixbuf/gdk-pixbuf-io.c:878
+#: gdk-pixbuf/gdk-pixbuf-io.c:833 gdk-pixbuf/gdk-pixbuf-io.c:884
 #, c-format
 msgid "Image type '%s' is not supported"
 msgstr "Không hỗ trợ kiểu ảnh « %s »"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:951
+#: gdk-pixbuf/gdk-pixbuf-io.c:969
 #, c-format
 msgid "Couldn't recognize the image file format for file '%s'"
 msgstr "Không thể nhận ra dạng thức tập tin ảnh cho tập tin « %s »"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:959
+#: gdk-pixbuf/gdk-pixbuf-io.c:977
 msgid "Unrecognized image file format"
 msgstr "Không nhận ra dạng thức tập tin ảnh"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1127
+#: gdk-pixbuf/gdk-pixbuf-io.c:1145
 #, c-format
 msgid "Failed to load image '%s': %s"
 msgstr "Lỗi tải tập tin ảnh « %s »: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1904 gdk-pixbuf/io-gdip-utils.c:888
+#: gdk-pixbuf/gdk-pixbuf-io.c:2033 gdk-pixbuf/io-gdip-utils.c:888
 #, c-format
 msgid "Error writing to image file: %s"
 msgstr "Gặp lỗi khi ghi vào tập tin ảnh: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1949 gdk-pixbuf/gdk-pixbuf-io.c:2079
+#: gdk-pixbuf/gdk-pixbuf-io.c:2078 gdk-pixbuf/gdk-pixbuf-io.c:2208
 #, c-format
 msgid "This build of gdk-pixbuf does not support saving the image format: %s"
 msgstr "Bản xây dụng gdk-pixbuf này không hỗ trợ lưu dạng thức ảnh: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1983
+#: gdk-pixbuf/gdk-pixbuf-io.c:2112
 msgid "Insufficient memory to save image to callback"
 msgstr "Không đủ bộ nhớ để lưu tập tin ảnh vào khả năng gọi lại"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1996
+#: gdk-pixbuf/gdk-pixbuf-io.c:2125
 msgid "Failed to open temporary file"
 msgstr "Lỗi mở tập tin tạm"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2022
+#: gdk-pixbuf/gdk-pixbuf-io.c:2151
 msgid "Failed to read from temporary file"
 msgstr "Lỗi đọc từ tập tin tạm"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2275
+#: gdk-pixbuf/gdk-pixbuf-io.c:2404
 #, c-format
 msgid "Failed to open '%s' for writing: %s"
 msgstr "Lỗi mở tập tin « %s » để ghi: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2301
+#: gdk-pixbuf/gdk-pixbuf-io.c:2430
 #, c-format
 msgid ""
 "Failed to close '%s' while writing image, all data may not have been saved: "
 "%s"
 msgstr "Lỗi đóng « %s » khi đang ghi ảnh, mọi dữ liệu có lẽ không được lưu: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2521 gdk-pixbuf/gdk-pixbuf-io.c:2572
+#: gdk-pixbuf/gdk-pixbuf-io.c:2651 gdk-pixbuf/gdk-pixbuf-io.c:2703
 msgid "Insufficient memory to save image into a buffer"
 msgstr "Không đủ bộ nhớ để lưu ảnh vào bộ đệm"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2618
+#: gdk-pixbuf/gdk-pixbuf-io.c:2749
 msgid "Error writing to image stream"
 msgstr "Gặp lỗi khi ghi vào luồng ảnh"
 
-#: gdk-pixbuf/gdk-pixbuf-loader.c:395
+#: gdk-pixbuf/gdk-pixbuf-loader.c:397
 #, c-format
 msgid ""
 "Internal error: Image loader module '%s' failed to complete an operation, "
@@ -132,24 +132,24 @@ msgstr ""
 "Lỗi nội bộ : mô-đun tải ảnh « %s » đã không kết thúc thao tác, cũng không "
 "diễn tả sao"
 
-#: gdk-pixbuf/gdk-pixbuf-loader.c:437
+#: gdk-pixbuf/gdk-pixbuf-loader.c:439
 #, c-format
 msgid "Incremental loading of image type '%s' is not supported"
 msgstr "Không hỗ trợ tải từ từ kiểu ảnh « %s »"
 
-#: gdk-pixbuf/gdk-pixdata.c:159
+#: gdk-pixbuf/gdk-pixdata.c:160
 msgid "Image header corrupt"
 msgstr "Phần đầu của ảnh bị hỏng"
 
-#: gdk-pixbuf/gdk-pixdata.c:164
+#: gdk-pixbuf/gdk-pixdata.c:165
 msgid "Image format unknown"
 msgstr "Không biết dạng thức ảnh"
 
-#: gdk-pixbuf/gdk-pixdata.c:169 gdk-pixbuf/gdk-pixdata.c:500
+#: gdk-pixbuf/gdk-pixdata.c:170 gdk-pixbuf/gdk-pixdata.c:502
 msgid "Image pixel data corrupt"
 msgstr "Dữ liệu điểm ảnh của ảnh bị hỏng"
 
-#: gdk-pixbuf/gdk-pixdata.c:444
+#: gdk-pixbuf/gdk-pixdata.c:446
 #, c-format
 msgid "failed to allocate image buffer of %u byte"
 msgid_plural "failed to allocate image buffer of %u bytes"
@@ -159,25 +159,21 @@ msgstr[0] "lỗi cấp phát %u byte cho vùng đệm ảnh"
 msgid "Unexpected icon chunk in animation"
 msgstr "Gặp đoạn biểu tượng bất thường trong hoạt cảnh"
 
-#: gdk-pixbuf/io-ani.c:337
-msgid "Unsupported animation type"
-msgstr "Không hỗ trợ kiểu hoạt cảnh"
-
-#: gdk-pixbuf/io-ani.c:348 gdk-pixbuf/io-ani.c:406 gdk-pixbuf/io-ani.c:432
-#: gdk-pixbuf/io-ani.c:455 gdk-pixbuf/io-ani.c:482 gdk-pixbuf/io-ani.c:569
+#: gdk-pixbuf/io-ani.c:342 gdk-pixbuf/io-ani.c:400 gdk-pixbuf/io-ani.c:426
+#: gdk-pixbuf/io-ani.c:449 gdk-pixbuf/io-ani.c:476 gdk-pixbuf/io-ani.c:563
 msgid "Invalid header in animation"
 msgstr "Phần đầu không hợp lệ trong hoạt cảnh"
 
-#: gdk-pixbuf/io-ani.c:358 gdk-pixbuf/io-ani.c:380 gdk-pixbuf/io-ani.c:464
-#: gdk-pixbuf/io-ani.c:491 gdk-pixbuf/io-ani.c:542 gdk-pixbuf/io-ani.c:614
+#: gdk-pixbuf/io-ani.c:352 gdk-pixbuf/io-ani.c:374 gdk-pixbuf/io-ani.c:458
+#: gdk-pixbuf/io-ani.c:485 gdk-pixbuf/io-ani.c:536 gdk-pixbuf/io-ani.c:608
 msgid "Not enough memory to load animation"
 msgstr "Không đủ bộ nhớ để tải hoạt cảnh"
 
-#: gdk-pixbuf/io-ani.c:398 gdk-pixbuf/io-ani.c:424 gdk-pixbuf/io-ani.c:443
+#: gdk-pixbuf/io-ani.c:392 gdk-pixbuf/io-ani.c:418 gdk-pixbuf/io-ani.c:437
 msgid "Malformed chunk in animation"
 msgstr "Đoạn dạng sai trong hoạt cảnh"
 
-#: gdk-pixbuf/io-ani.c:711
+#: gdk-pixbuf/io-ani.c:705
 msgid "The ANI image format"
 msgstr "Dạng thức ảnh ANI"
 
@@ -214,61 +210,140 @@ msgstr "Không thể ghi vào tập tin BMP"
 msgid "The BMP image format"
 msgstr "Dạng thức ảnh BMP"
 
-#: gdk-pixbuf/io-gif.c:221
+#: gdk-pixbuf/io-gdip-emf.c:59
+msgid "The EMF image format"
+msgstr "Định dạng ảnh EMF"
+
+#: gdk-pixbuf/io-gdip-gif.c:80 gdk-pixbuf/io-gif.c:1719
+msgid "The GIF image format"
+msgstr "Dạng thức ảnh GIF"
+
+#: gdk-pixbuf/io-gdip-ico.c:59 gdk-pixbuf/io-ico.c:1271
+msgid "The ICO image format"
+msgstr "Dạng thức ảnh ICO"
+
+#: gdk-pixbuf/io-gdip-jpeg.c:53 gdk-pixbuf/io-jpeg.c:1139
+#, c-format
+msgid ""
+"JPEG quality must be a value between 0 and 100; value '%s' could not be "
+"parsed."
+msgstr ""
+"Hệ số chất lượng của JPEG phải nằm trong khoảng 0 và 100; không thể phân "
+"tách giá trị « %s »."
+
+#: gdk-pixbuf/io-gdip-jpeg.c:68 gdk-pixbuf/io-jpeg.c:1154
+#, c-format
+msgid ""
+"JPEG quality must be a value between 0 and 100; value '%d' is not allowed."
+msgstr ""
+"Hệ số chất lượng của JPEG phải nằm trong khoảng 0 và 100; không chấp nhận "
+"giá trị « %d »."
+
+#: gdk-pixbuf/io-gdip-jpeg.c:136 gdk-pixbuf/io-jpeg.c:1316
+msgid "The JPEG image format"
+msgstr "Dạng thức ảnh JPEG"
+
+#: gdk-pixbuf/io-gdip-utils.c:154
+#, c-format
+msgid "Could not allocate memory: %s"
+msgstr "Không thể cấp phát bộ nhớ : %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:179 gdk-pixbuf/io-gdip-utils.c:293
+#: gdk-pixbuf/io-gdip-utils.c:333
+#, c-format
+msgid "Could not create stream: %s"
+msgstr "Không thể tạo luồng: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:193
+#, c-format
+msgid "Could not seek stream: %s"
+msgstr "Không thể tìm nơi trong luồng: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:205
+#, c-format
+msgid "Could not read from stream: %s"
+msgstr "Không thể đọc từ luồng: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:617 gdk-pixbuf/io-gdip-utils.c:752
+msgid "Couldn't load bitmap"
+msgstr "Không thể nạp ảnh mảng"
+
+#: gdk-pixbuf/io-gdip-utils.c:774
+msgid "Couldn't load metafile"
+msgstr "Không thể nạp siêu tập tin"
+
+#: gdk-pixbuf/io-gdip-utils.c:933
+msgid "Unsupported image format for GDI+"
+msgstr "Định dạng ảnh không được hỗ trợ đối với GDI+"
+
+#: gdk-pixbuf/io-gdip-utils.c:940
+msgid "Couldn't save"
+msgstr "Không thể lưu"
+
+#: gdk-pixbuf/io-gdip-wmf.c:58
+msgid "The WMF image format"
+msgstr "Định dạng ảnh WMF"
+
+#: gdk-pixbuf/io-gif.c:222
 #, c-format
 msgid "Failure reading GIF: %s"
 msgstr "Lỗi đọc tập tin dạng GIF: %s"
 
-#: gdk-pixbuf/io-gif.c:495 gdk-pixbuf/io-gif.c:1482 gdk-pixbuf/io-gif.c:1648
+#: gdk-pixbuf/io-gif.c:496 gdk-pixbuf/io-gif.c:1501 gdk-pixbuf/io-gif.c:1668
 msgid "GIF file was missing some data (perhaps it was truncated somehow?)"
 msgstr ""
 "Tập tin GIF thiếu một vài dữ liệu (có lẽ tập tin đã bị cắt bớt bằng cách "
 "nào?)"
 
-#: gdk-pixbuf/io-gif.c:504
+#: gdk-pixbuf/io-gif.c:505
 #, c-format
 msgid "Internal error in the GIF loader (%s)"
 msgstr "Lỗi nội bộ trong bộ tải tập tin dạng GIF (%s)"
 
-#: gdk-pixbuf/io-gif.c:578
+#: gdk-pixbuf/io-gif.c:579
 msgid "Stack overflow"
 msgstr "Tràn đống"
 
-#: gdk-pixbuf/io-gif.c:638
+#: gdk-pixbuf/io-gif.c:639
 msgid "GIF image loader cannot understand this image."
 msgstr "Bộ tải tập tin GIF không thể hiểu ảnh này."
 
-#: gdk-pixbuf/io-gif.c:667
+#: gdk-pixbuf/io-gif.c:668
 msgid "Bad code encountered"
 msgstr "Phát hiện mã sai"
 
-#: gdk-pixbuf/io-gif.c:677
+#: gdk-pixbuf/io-gif.c:678
 msgid "Circular table entry in GIF file"
 msgstr "Mục nhập bảng kiểu tròn trong tập tin GIF"
 
-#: gdk-pixbuf/io-gif.c:865 gdk-pixbuf/io-gif.c:1468 gdk-pixbuf/io-gif.c:1521
-#: gdk-pixbuf/io-gif.c:1636
+#: gdk-pixbuf/io-gif.c:866 gdk-pixbuf/io-gif.c:1487 gdk-pixbuf/io-gif.c:1540
+#: gdk-pixbuf/io-gif.c:1656
 msgid "Not enough memory to load GIF file"
 msgstr "Không đủ bộ nhớ để tải tập tin dạng GIF"
 
-#: gdk-pixbuf/io-gif.c:959
+#: gdk-pixbuf/io-gif.c:960
 msgid "Not enough memory to composite a frame in GIF file"
 msgstr "Không đủ bộ nhớ để tạo một khung trong tập tin dạng GIF"
 
-#: gdk-pixbuf/io-gif.c:1131
+#: gdk-pixbuf/io-gif.c:1132
 msgid "GIF image is corrupt (incorrect LZW compression)"
 msgstr "Tập tin GIF bị hỏng (dữ liệu nén LZW sai)"
 
-#: gdk-pixbuf/io-gif.c:1181
+#: gdk-pixbuf/io-gif.c:1182
 msgid "File does not appear to be a GIF file"
 msgstr "Tập tin này có vẻ không phải là tập tin dạng GIF"
 
-#: gdk-pixbuf/io-gif.c:1193
+#: gdk-pixbuf/io-gif.c:1194
 #, c-format
 msgid "Version %s of the GIF file format is not supported"
 msgstr "Không hỗ trợ phiên bản %s của dạng thức tập tin GIF"
 
-#: gdk-pixbuf/io-gif.c:1302
+#: gdk-pixbuf/io-gif.c:1241
+#, fuzzy
+msgid "Resulting GIF image has zero size"
+msgstr "Ảnh có chiều rộng bằng không"
+
+#: gdk-pixbuf/io-gif.c:1320
 msgid ""
 "GIF image has no global colormap, and a frame inside it has no local "
 "colormap."
@@ -276,13 +351,22 @@ msgstr ""
 "Ảnh GIF không có bảng màu toàn cục, và có một khung bên trong không có bảng "
 "màu cục bộ."
 
-#: gdk-pixbuf/io-gif.c:1543
+#: gdk-pixbuf/io-gif.c:1563
 msgid "GIF image was truncated or incomplete."
 msgstr "Ảnh GIF bị cắt bớt hoặc không hoàn chỉnh."
 
-#: gdk-pixbuf/io-gif.c:1699 gdk-pixbuf/io-gdip-gif.c:80
-msgid "The GIF image format"
-msgstr "Dạng thức ảnh GIF"
+#: gdk-pixbuf/io-icns.c:347
+#, c-format
+msgid "Error reading ICNS image: %s"
+msgstr "Lỗi đọc ảnh ICNS: %s"
+
+#: gdk-pixbuf/io-icns.c:364
+msgid "Could not decode ICNS file"
+msgstr "Không thể giải mã tập tin ICNS"
+
+#: gdk-pixbuf/io-icns.c:397
+msgid "The ICNS image format"
+msgstr "Dạng thức ảnh ICNS"
 
 #: gdk-pixbuf/io-ico.c:228 gdk-pixbuf/io-ico.c:242 gdk-pixbuf/io-ico.c:291
 #: gdk-pixbuf/io-ico.c:302 gdk-pixbuf/io-ico.c:395
@@ -326,23 +410,6 @@ msgstr "Điểm nóng con trỏ nằm ngoài ảnh"
 #, c-format
 msgid "Unsupported depth for ICO file: %d"
 msgstr "Hỗ trợ độ sâu này cho tập tin ICO: %d"
-
-#: gdk-pixbuf/io-ico.c:1271 gdk-pixbuf/io-gdip-ico.c:59
-msgid "The ICO image format"
-msgstr "Dạng thức ảnh ICO"
-
-#: gdk-pixbuf/io-icns.c:347
-#, c-format
-msgid "Error reading ICNS image: %s"
-msgstr "Lỗi đọc ảnh ICNS: %s"
-
-#: gdk-pixbuf/io-icns.c:364
-msgid "Could not decode ICNS file"
-msgstr "Không thể giải mã tập tin ICNS"
-
-#: gdk-pixbuf/io-icns.c:397
-msgid "The ICNS image format"
-msgstr "Dạng thức ảnh ICNS"
 
 #: gdk-pixbuf/io-jasper.c:74
 msgid "Couldn't allocate memory for stream"
@@ -403,27 +470,6 @@ msgstr "Không thể cấp phát bộ nhớ để tải tập tin JPEG"
 msgid "Transformed JPEG has zero width or height."
 msgstr "Ảnh JPEG đã được chuyển đổi có chiều rộng/cao bằng không."
 
-#: gdk-pixbuf/io-jpeg.c:1139 gdk-pixbuf/io-gdip-jpeg.c:53
-#, c-format
-msgid ""
-"JPEG quality must be a value between 0 and 100; value '%s' could not be "
-"parsed."
-msgstr ""
-"Hệ số chất lượng của JPEG phải nằm trong khoảng 0 và 100; không thể phân "
-"tách giá trị « %s »."
-
-#: gdk-pixbuf/io-jpeg.c:1154 gdk-pixbuf/io-gdip-jpeg.c:68
-#, c-format
-msgid ""
-"JPEG quality must be a value between 0 and 100; value '%d' is not allowed."
-msgstr ""
-"Hệ số chất lượng của JPEG phải nằm trong khoảng 0 và 100; không chấp nhận "
-"giá trị « %d »."
-
-#: gdk-pixbuf/io-jpeg.c:1316 gdk-pixbuf/io-gdip-jpeg.c:136
-msgid "The JPEG image format"
-msgstr "Dạng thức ảnh JPEG"
-
 #: gdk-pixbuf/io-pcx.c:186
 msgid "Couldn't allocate memory for header"
 msgstr "Không thể cấp phát bộ nhớ cho phần đầu"
@@ -468,6 +514,16 @@ msgstr "Không tìm thấy bảng chọn ở cuối dữ liệu PCX"
 #: gdk-pixbuf/io-pcx.c:755
 msgid "The PCX image format"
 msgstr "Dạng thức ảnh PCX"
+
+#: gdk-pixbuf/io-pixdata.c:148
+#, fuzzy
+msgid "Transformed pixbuf has zero width or height."
+msgstr "Ảnh PNG đã được chuyển đổi có chiều rộng/cao bằng không."
+
+#: gdk-pixbuf/io-pixdata.c:186
+#, fuzzy
+msgid "The GdkPixdata format"
+msgstr "Dạng thức ảnh GIF"
 
 #: gdk-pixbuf/io-png.c:54
 msgid "Bits per channel of PNG image is invalid."
@@ -620,47 +676,50 @@ msgstr "Không đủ bộ nhớ để tải tập tin PNM"
 msgid "The PNM/PBM/PGM/PPM image format family"
 msgstr "Họ dạng thức ảnh PNM/PBM/PGM/PPM"
 
-#: gdk-pixbuf/io-qtif.c:127
+#: gdk-pixbuf/io-qtif.c:128
 msgid "Input file descriptor is NULL."
 msgstr "Tập tin đầu vào có bộ mô tả VÔ GIÁ TRỊ."
 
-#: gdk-pixbuf/io-qtif.c:142
+#: gdk-pixbuf/io-qtif.c:143
 msgid "Failed to read QTIF header"
 msgstr "Lỗi đọc phần đầu QTIF"
 
-#: gdk-pixbuf/io-qtif.c:151 gdk-pixbuf/io-qtif.c:181 gdk-pixbuf/io-qtif.c:445
-#, c-format
-msgid "QTIF atom size too large (%d bytes)"
-msgstr "Atom QTIF có kích cỡ quá lớn (%d byte)"
+#: gdk-pixbuf/io-qtif.c:152 gdk-pixbuf/io-qtif.c:189 gdk-pixbuf/io-qtif.c:459
+#, fuzzy, c-format
+msgid "QTIF atom size too large (%d byte)"
+msgid_plural "QTIF atom size too large (%d bytes)"
+msgstr[0] "Atom QTIF có kích cỡ quá lớn (%d byte)"
 
-#: gdk-pixbuf/io-qtif.c:171
-#, c-format
-msgid "Failed to allocate %d bytes for file read buffer"
-msgstr "Lỗi cấp phát %d byte cho vùng đệm đọc tập tin"
+#: gdk-pixbuf/io-qtif.c:175
+#, fuzzy, c-format
+msgid "Failed to allocate %d byte for file read buffer"
+msgid_plural "Failed to allocate %d bytes for file read buffer"
+msgstr[0] "Lỗi cấp phát %d byte cho vùng đệm đọc tập tin"
 
-#: gdk-pixbuf/io-qtif.c:195
+#: gdk-pixbuf/io-qtif.c:206
 #, c-format
 msgid "File error when reading QTIF atom: %s"
 msgstr "Gặp lỗi tập tin khi đọc atom QTIF: %s"
 
-#: gdk-pixbuf/io-qtif.c:232
-#, c-format
-msgid "Failed to skip the next %d bytes with seek()."
-msgstr "Không nhảy được qua %d byte kế tiếp dùng seek()."
+#: gdk-pixbuf/io-qtif.c:243
+#, fuzzy, c-format
+msgid "Failed to skip the next %d byte with seek()."
+msgid_plural "Failed to skip the next %d bytes with seek()."
+msgstr[0] "Không nhảy được qua %d byte kế tiếp dùng seek()."
 
-#: gdk-pixbuf/io-qtif.c:256
+#: gdk-pixbuf/io-qtif.c:270
 msgid "Failed to allocate QTIF context structure."
 msgstr "Không cấp phát được cấu trúc ngữ cảnh QTIF."
 
-#: gdk-pixbuf/io-qtif.c:316
+#: gdk-pixbuf/io-qtif.c:330
 msgid "Failed to create GdkPixbufLoader object."
 msgstr "Không tạo được đối tượng kiểu GdkPixbufLoader (nạp vùng đệm điểm ảnh)."
 
-#: gdk-pixbuf/io-qtif.c:420
+#: gdk-pixbuf/io-qtif.c:434
 msgid "Failed to find an image data atom."
 msgstr "Không tìm thấy được một atom kiểu dữ liệu ảnh."
 
-#: gdk-pixbuf/io-qtif.c:601
+#: gdk-pixbuf/io-qtif.c:618
 msgid "The QTIF image format"
 msgstr "Định dạng ảnh QTIF"
 
@@ -821,19 +880,19 @@ msgstr "Không thể lưu phần còn lại"
 msgid "The WBMP image format"
 msgstr "Dạng thức ảnh WBMP"
 
-#: gdk-pixbuf/io-xbm.c:296
+#: gdk-pixbuf/io-xbm.c:304
 msgid "Invalid XBM file"
 msgstr "Tập tin XBM không hợp lệ"
 
-#: gdk-pixbuf/io-xbm.c:306
+#: gdk-pixbuf/io-xbm.c:314
 msgid "Insufficient memory to load XBM image file"
 msgstr "Không đủ bộ nhớ để tải tập tin ảnh XBM"
 
-#: gdk-pixbuf/io-xbm.c:454
+#: gdk-pixbuf/io-xbm.c:462
 msgid "Failed to write to temporary file when loading XBM image"
 msgstr "Lỗi ghi vào tập tin tạm khi tải ảnh XBM"
 
-#: gdk-pixbuf/io-xbm.c:493
+#: gdk-pixbuf/io-xbm.c:501
 msgid "The XBM image format"
 msgstr "Dạng thức ảnh XBM"
 
@@ -877,50 +936,8 @@ msgstr "Lỗi ghi vào tập tin tạm khi tải ảnh XPM"
 msgid "The XPM image format"
 msgstr "Định dạng ảnh XPM"
 
-#: gdk-pixbuf/io-gdip-emf.c:59
-msgid "The EMF image format"
-msgstr "Định dạng ảnh EMF"
-
-#: gdk-pixbuf/io-gdip-utils.c:154
-#, c-format
-msgid "Could not allocate memory: %s"
-msgstr "Không thể cấp phát bộ nhớ : %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:179 gdk-pixbuf/io-gdip-utils.c:293
-#: gdk-pixbuf/io-gdip-utils.c:333
-#, c-format
-msgid "Could not create stream: %s"
-msgstr "Không thể tạo luồng: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:193
-#, c-format
-msgid "Could not seek stream: %s"
-msgstr "Không thể tìm nơi trong luồng: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:205
-#, c-format
-msgid "Could not read from stream: %s"
-msgstr "Không thể đọc từ luồng: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:617 gdk-pixbuf/io-gdip-utils.c:752
-msgid "Couldn't load bitmap"
-msgstr "Không thể nạp ảnh mảng"
-
-#: gdk-pixbuf/io-gdip-utils.c:774
-msgid "Couldn't load metafile"
-msgstr "Không thể nạp siêu tập tin"
-
-#: gdk-pixbuf/io-gdip-utils.c:933
-msgid "Unsupported image format for GDI+"
-msgstr "Định dạng ảnh không được hỗ trợ đối với GDI+"
-
-#: gdk-pixbuf/io-gdip-utils.c:940
-msgid "Couldn't save"
-msgstr "Không thể lưu"
-
-#: gdk-pixbuf/io-gdip-wmf.c:58
-msgid "The WMF image format"
-msgstr "Định dạng ảnh WMF"
+#~ msgid "Unsupported animation type"
+#~ msgstr "Không hỗ trợ kiểu hoạt cảnh"
 
 #~ msgid "Couldn't allocate memory for paletted data"
 #~ msgstr "Không thể cấp phát bộ nhớ cho dữ liệu trong bảng chọn"

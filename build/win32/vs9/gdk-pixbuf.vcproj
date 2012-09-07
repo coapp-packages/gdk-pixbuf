@@ -32,7 +32,7 @@
     Name="VCCLCompilerTool"
     AdditionalOptions=""
     Optimization="0"
-    AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf"
+    AdditionalIncludeDirectories=""
     PreprocessorDefinitions="_DEBUG;$(GdkPixbufDefines);$(GDIP_MACROS);DLL_EXPORT"
     MinimalRebuild="true"
     BasicRuntimeChecks="3"
@@ -50,7 +50,7 @@
     AdditionalDependencies="Gdiplus.lib libpng15d.lib zlib1d.lib"
     OutputFile="$(OutDir)/$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="2"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     ProgramDatabaseFile="$(OutDir)/gdk-pixbuf.pdb"
     SubSystem="2"
@@ -73,7 +73,7 @@
     Name="VCCLCompilerTool"
     AdditionalOptions=""
     Optimization="3"
-    AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf"
+    AdditionalIncludeDirectories=""
     PreprocessorDefinitions="$(GdkPixbufDefines);$(GDIP_MACROS);DLL_EXPORT"
     RuntimeLibrary="2"
     UsePrecompiledHeader="0"
@@ -89,7 +89,7 @@
     AdditionalDependencies="Gdiplus.lib libpng15.lib zlib1.lib"
     OutputFile="$(OutDir)/$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="1"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     SubSystem="2"
     OptimizeReferences="2"
@@ -112,7 +112,7 @@
    <Tool
     Name="VCCLCompilerTool"
     Optimization="0"
-    AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf"
+    AdditionalIncludeDirectories=""
     PreprocessorDefinitions="_DEBUG;$(GdkPixbufDefines);$(GDIP_MACROS);DLL_EXPORT"
     MinimalRebuild="true"
     BasicRuntimeChecks="3"
@@ -130,7 +130,7 @@
     AdditionalDependencies="Gdiplus.lib libpng15d.lib zlib1d.lib"
     OutputFile="$(OutDir)\$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="2"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     SubSystem="2"
     ImportLibrary="$(OutDir)/gdk_pixbuf-$(GdkPixbufApiVersion).lib"
@@ -163,7 +163,7 @@
     AdditionalDependencies="Gdiplus.lib libpng15.lib zlib1.lib"
     OutputFile="$(OutDir)\$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="2"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     SubSystem="2"
     OptimizeReferences="2"
@@ -186,7 +186,7 @@
     Name="VCCLCompilerTool"
     Optimization="0"
     AdditionalOptions=""
-    AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf"
+    AdditionalIncludeDirectories=""
     PreprocessorDefinitions="$(GdkPixbufDefines);$(NOGDIP_MACROS);DLL_EXPORT"
     MinimalRebuild="true"
     BasicRuntimeChecks="3"
@@ -194,7 +194,6 @@
     UsePrecompiledHeader="0"
     WarningLevel="3"
     DebugInformationFormat="4"
-
    />
    <Tool
     Name="VCPreLinkEventTool"
@@ -206,7 +205,7 @@
     OutputFile="$(OutDir)/$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="2"
     IgnoreDefaultLibraryNames="LIBCMTD.lib;LIBCMT.lib"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     ProgramDatabaseFile="$(OutDir)/gdk-pixbuf.pdb"
     SubSystem="2"
@@ -230,7 +229,7 @@
     Name="VCCLCompilerTool"
     AdditionalOptions=""
     Optimization="3"
-    AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf"
+    AdditionalIncludeDirectories=""
     PreprocessorDefinitions="$(GdkPixbufDefines);$(NOGDIP_MACROS);DLL_EXPORT"
     RuntimeLibrary="2"
     UsePrecompiledHeader="0"
@@ -247,7 +246,7 @@
     OutputFile="$(OutDir)/$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="1"
     IgnoreDefaultLibraryNames="LIBCMT.lib"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     SubSystem="2"
     OptimizeReferences="2"
@@ -271,7 +270,7 @@
    <Tool
     Name="VCCLCompilerTool"
     Optimization="0"
-    AdditionalIncludeDirectories="..\..\..;..\..\..\gdk-pixbuf"
+    AdditionalIncludeDirectories=""
     PreprocessorDefinitions="_DEBUG;$(GdkPixbufDefines);$(NOGDIP_MACROS);DLL_EXPORT"
     MinimalRebuild="true"
     BasicRuntimeChecks="3"
@@ -290,7 +289,7 @@
     OutputFile="$(OutDir)\$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="2"
     IgnoreDefaultLibraryNames="LIBCMTD.lib;LIBCMT.lib"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     SubSystem="2"
     ImportLibrary="$(OutDir)/gdk_pixbuf-$(GdkPixbufApiVersion).lib"
@@ -325,7 +324,7 @@
     OutputFile="$(OutDir)\$(GdkPixbufDllPrefix)gdk_pixbuf$(GdkPixbufDllSuffix).dll"
     LinkIncremental="2"
     IgnoreDefaultLibraryNames="LIBCMT.lib"
-    ModuleDefinitionFile="..\..\..\gdk-pixbuf\gdk-pixbuf.def"
+    ModuleDefinitionFile="$(IntDir)\gdk-pixbuf.def"
     GenerateDebugInformation="true"
     SubSystem="2"
     OptimizeReferences="2"
@@ -359,6 +358,7 @@
    <File RelativePath="..\..\..\gdk-pixbuf\io-gif-animation.c" />
    <File RelativePath="..\..\..\gdk-pixbuf\io-icns.c" />
    <File RelativePath="..\..\..\gdk-pixbuf\io-pcx.c" />
+   <File RelativePath="..\..\..\gdk-pixbuf\io-pixdata.c" />
    <File RelativePath="..\..\..\gdk-pixbuf\io-png.c" />
    <File RelativePath="..\..\..\gdk-pixbuf\io-pnm.c" />
    <File RelativePath="..\..\..\gdk-pixbuf\io-qtif.c" />

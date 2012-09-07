@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: ast\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gdk-"
 "pixbuf\n"
-"POT-Creation-Date: 2011-12-16 19:18-0500\n"
+"POT-Creation-Date: 2012-08-20 16:13-0400\n"
 "PO-Revision-Date: 2011-02-15 18:33+0200\n"
 "Last-Translator: Xandru Armesto <xandru@softastur.org>\n"
 "Language-Team: Softastur alministradores@softastur.org\n"
@@ -23,19 +23,19 @@ msgstr ""
 "X-Launchpad-Export-Date: 2010-01-11 12:44+0000\n"
 "X-Poedit-Language: asturian\n"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:146 gdk-pixbuf/gdk-pixbuf-io.c:1070
-#: gdk-pixbuf/gdk-pixbuf-io.c:1336
+#: gdk-pixbuf/gdk-pixbuf-animation.c:147 gdk-pixbuf/gdk-pixbuf-io.c:1088
+#: gdk-pixbuf/gdk-pixbuf-io.c:1354
 #, c-format
 msgid "Failed to open file '%s': %s"
 msgstr "Falló al abrir el ficheru '%s': %s"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:159 gdk-pixbuf/gdk-pixbuf-io.c:1082
+#: gdk-pixbuf/gdk-pixbuf-animation.c:160 gdk-pixbuf/gdk-pixbuf-io.c:1100
 #, c-format
 msgid "Image file '%s' contains no data"
 msgstr "El ficheru d'imaxe '%s' nun tien datos"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:201 gdk-pixbuf/gdk-pixbuf-io.c:1118
-#: gdk-pixbuf/gdk-pixbuf-io.c:1388
+#: gdk-pixbuf/gdk-pixbuf-animation.c:202 gdk-pixbuf/gdk-pixbuf-io.c:1136
+#: gdk-pixbuf/gdk-pixbuf-io.c:1406
 #, c-format
 msgid ""
 "Failed to load image '%s': reason not known, probably a corrupt image file"
@@ -43,7 +43,7 @@ msgstr ""
 "Falló al cargar la imaxe '%s': nun se sabe la razón, pue que'l ficheru de la "
 "imaxe tea frayáu"
 
-#: gdk-pixbuf/gdk-pixbuf-animation.c:234
+#: gdk-pixbuf/gdk-pixbuf-animation.c:235
 #, c-format
 msgid ""
 "Failed to load animation '%s': reason not known, probably a corrupt "
@@ -52,12 +52,12 @@ msgstr ""
 "Falló al cargar l'animación '%s': nun se sabe la razón, pue que'l ficheru "
 "d'animación tea frayáu"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:803
+#: gdk-pixbuf/gdk-pixbuf-io.c:809
 #, c-format
 msgid "Unable to load image-loading module: %s: %s"
 msgstr "Incapaz de cargar el módulu de carga d'imaxe: %s: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:818
+#: gdk-pixbuf/gdk-pixbuf-io.c:824
 #, c-format
 msgid ""
 "Image-loading module %s does not export the proper interface; perhaps it's "
@@ -66,53 +66,53 @@ msgstr ""
 "El módulu de carga d'imaxe %s nun exporta la interfaz afayadiza; ¿pue que "
 "seya d'una versióngdk-pixbuf distinta?"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:827 gdk-pixbuf/gdk-pixbuf-io.c:878
+#: gdk-pixbuf/gdk-pixbuf-io.c:833 gdk-pixbuf/gdk-pixbuf-io.c:884
 #, c-format
 msgid "Image type '%s' is not supported"
 msgstr "El tipu d'imaxe '%s' nun ta soportáu"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:951
+#: gdk-pixbuf/gdk-pixbuf-io.c:969
 #, c-format
 msgid "Couldn't recognize the image file format for file '%s'"
 msgstr "Nun pudo reconocese'l formatu del ficheru d'imaxe pal ficheru '%s'"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:959
+#: gdk-pixbuf/gdk-pixbuf-io.c:977
 msgid "Unrecognized image file format"
 msgstr "Formatu de ficheru d'imaxe irreconocible"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1127
+#: gdk-pixbuf/gdk-pixbuf-io.c:1145
 #, c-format
 msgid "Failed to load image '%s': %s"
 msgstr "Falló al cargar la imaxe '%s': %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1904 gdk-pixbuf/io-gdip-utils.c:888
+#: gdk-pixbuf/gdk-pixbuf-io.c:2033 gdk-pixbuf/io-gdip-utils.c:888
 #, c-format
 msgid "Error writing to image file: %s"
 msgstr "Error al escribir al ficheru d'imaxe: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1949 gdk-pixbuf/gdk-pixbuf-io.c:2079
+#: gdk-pixbuf/gdk-pixbuf-io.c:2078 gdk-pixbuf/gdk-pixbuf-io.c:2208
 #, c-format
 msgid "This build of gdk-pixbuf does not support saving the image format: %s"
 msgstr "Esti bloque de gdk-pixbuf nun soporta guardar el formatu d'imaxe: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1983
+#: gdk-pixbuf/gdk-pixbuf-io.c:2112
 msgid "Insufficient memory to save image to callback"
 msgstr "Memoria insuficiente pa guardar imaxe pa rellamada"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:1996
+#: gdk-pixbuf/gdk-pixbuf-io.c:2125
 msgid "Failed to open temporary file"
 msgstr "Falló l'apertura del ficheru temporal"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2022
+#: gdk-pixbuf/gdk-pixbuf-io.c:2151
 msgid "Failed to read from temporary file"
 msgstr "Falló la llectura del ficheru temporal"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2275
+#: gdk-pixbuf/gdk-pixbuf-io.c:2404
 #, c-format
 msgid "Failed to open '%s' for writing: %s"
 msgstr "Falló l'apertura de '%s' pa escribir: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2301
+#: gdk-pixbuf/gdk-pixbuf-io.c:2430
 #, c-format
 msgid ""
 "Failed to close '%s' while writing image, all data may not have been saved: "
@@ -121,15 +121,15 @@ msgstr ""
 "Falló al zarrar '%s' mentanto s'escribía la imaxe, pue que nun se guardaren "
 "tolos datos: %s"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2521 gdk-pixbuf/gdk-pixbuf-io.c:2572
+#: gdk-pixbuf/gdk-pixbuf-io.c:2651 gdk-pixbuf/gdk-pixbuf-io.c:2703
 msgid "Insufficient memory to save image into a buffer"
 msgstr "Memoria insuficiente pa guardar la imaxe nun búfer"
 
-#: gdk-pixbuf/gdk-pixbuf-io.c:2618
+#: gdk-pixbuf/gdk-pixbuf-io.c:2749
 msgid "Error writing to image stream"
 msgstr "Error al escribir nel fluxu d'imaxe"
 
-#: gdk-pixbuf/gdk-pixbuf-loader.c:395
+#: gdk-pixbuf/gdk-pixbuf-loader.c:397
 #, c-format
 msgid ""
 "Internal error: Image loader module '%s' failed to complete an operation, "
@@ -138,24 +138,24 @@ msgstr ""
 "Error internu: El módulu de carga d'imaxe '%s' falló al completar una "
 "operación, pero nun dio un motivu del fallu"
 
-#: gdk-pixbuf/gdk-pixbuf-loader.c:437
+#: gdk-pixbuf/gdk-pixbuf-loader.c:439
 #, c-format
 msgid "Incremental loading of image type '%s' is not supported"
 msgstr "Nun ta soportao la carga creciente del tipu d'imaxe '%s'"
 
-#: gdk-pixbuf/gdk-pixdata.c:159
+#: gdk-pixbuf/gdk-pixdata.c:160
 msgid "Image header corrupt"
 msgstr "Encabezamientu d'imaxe corruptu"
 
-#: gdk-pixbuf/gdk-pixdata.c:164
+#: gdk-pixbuf/gdk-pixdata.c:165
 msgid "Image format unknown"
 msgstr "Formatu d'imaxe desconocíu"
 
-#: gdk-pixbuf/gdk-pixdata.c:169 gdk-pixbuf/gdk-pixdata.c:500
+#: gdk-pixbuf/gdk-pixdata.c:170 gdk-pixbuf/gdk-pixdata.c:502
 msgid "Image pixel data corrupt"
 msgstr "Datos de pixels d'imaxe corruptos"
 
-#: gdk-pixbuf/gdk-pixdata.c:444
+#: gdk-pixbuf/gdk-pixdata.c:446
 #, c-format
 msgid "failed to allocate image buffer of %u byte"
 msgid_plural "failed to allocate image buffer of %u bytes"
@@ -166,25 +166,21 @@ msgstr[1] "falló p'atopar búfer d'imaxe de %u bytes"
 msgid "Unexpected icon chunk in animation"
 msgstr "Iconu frayáu n'animación inesperáu"
 
-#: gdk-pixbuf/io-ani.c:337
-msgid "Unsupported animation type"
-msgstr "Tipu d'animación non soportáu"
-
-#: gdk-pixbuf/io-ani.c:348 gdk-pixbuf/io-ani.c:406 gdk-pixbuf/io-ani.c:432
-#: gdk-pixbuf/io-ani.c:455 gdk-pixbuf/io-ani.c:482 gdk-pixbuf/io-ani.c:569
+#: gdk-pixbuf/io-ani.c:342 gdk-pixbuf/io-ani.c:400 gdk-pixbuf/io-ani.c:426
+#: gdk-pixbuf/io-ani.c:449 gdk-pixbuf/io-ani.c:476 gdk-pixbuf/io-ani.c:563
 msgid "Invalid header in animation"
 msgstr "Encabezamientu non válidu n'animación"
 
-#: gdk-pixbuf/io-ani.c:358 gdk-pixbuf/io-ani.c:380 gdk-pixbuf/io-ani.c:464
-#: gdk-pixbuf/io-ani.c:491 gdk-pixbuf/io-ani.c:542 gdk-pixbuf/io-ani.c:614
+#: gdk-pixbuf/io-ani.c:352 gdk-pixbuf/io-ani.c:374 gdk-pixbuf/io-ani.c:458
+#: gdk-pixbuf/io-ani.c:485 gdk-pixbuf/io-ani.c:536 gdk-pixbuf/io-ani.c:608
 msgid "Not enough memory to load animation"
 msgstr "Nun hai memoria suficiente pa cargar l'animación"
 
-#: gdk-pixbuf/io-ani.c:398 gdk-pixbuf/io-ani.c:424 gdk-pixbuf/io-ani.c:443
+#: gdk-pixbuf/io-ani.c:392 gdk-pixbuf/io-ani.c:418 gdk-pixbuf/io-ani.c:437
 msgid "Malformed chunk in animation"
 msgstr "Trozu mal formáu n'animación"
 
-#: gdk-pixbuf/io-ani.c:711
+#: gdk-pixbuf/io-ani.c:705
 msgid "The ANI image format"
 msgstr "El formatu d'imaxe ANI"
 
@@ -221,59 +217,138 @@ msgstr "Nun pudo escribise al ficheru BMP"
 msgid "The BMP image format"
 msgstr "El formatu d'imaxe BMP"
 
-#: gdk-pixbuf/io-gif.c:221
+#: gdk-pixbuf/io-gdip-emf.c:59
+msgid "The EMF image format"
+msgstr "El formatu d'imaxe EMF"
+
+#: gdk-pixbuf/io-gdip-gif.c:80 gdk-pixbuf/io-gif.c:1719
+msgid "The GIF image format"
+msgstr "El formatu d'imaxe GIF"
+
+#: gdk-pixbuf/io-gdip-ico.c:59 gdk-pixbuf/io-ico.c:1271
+msgid "The ICO image format"
+msgstr "El formatu d'imaxe ICO"
+
+#: gdk-pixbuf/io-gdip-jpeg.c:53 gdk-pixbuf/io-jpeg.c:1139
+#, c-format
+msgid ""
+"JPEG quality must be a value between 0 and 100; value '%s' could not be "
+"parsed."
+msgstr ""
+"La calidá JPEG tien de ser un valor d'ente 0 y 100; el valor '%s' nun pue "
+"procesase."
+
+#: gdk-pixbuf/io-gdip-jpeg.c:68 gdk-pixbuf/io-jpeg.c:1154
+#, c-format
+msgid ""
+"JPEG quality must be a value between 0 and 100; value '%d' is not allowed."
+msgstr ""
+"La calidá JPEG tien de ser un valor d'ente 0 y 100; el valor '%d' nun ye un "
+"valor válidu."
+
+#: gdk-pixbuf/io-gdip-jpeg.c:136 gdk-pixbuf/io-jpeg.c:1316
+msgid "The JPEG image format"
+msgstr "El formatu d'imaxe JPEG"
+
+#: gdk-pixbuf/io-gdip-utils.c:154
+#, c-format
+msgid "Could not allocate memory: %s"
+msgstr "Nun se pudo asignar memoria: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:179 gdk-pixbuf/io-gdip-utils.c:293
+#: gdk-pixbuf/io-gdip-utils.c:333
+#, c-format
+msgid "Could not create stream: %s"
+msgstr "Nun se pudo crear el fluxu: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:193
+#, c-format
+msgid "Could not seek stream: %s"
+msgstr "Nun se pudo buscar el fluxu: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:205
+#, c-format
+msgid "Could not read from stream: %s"
+msgstr "Nun se pudo lleer el fluxu: %s"
+
+#: gdk-pixbuf/io-gdip-utils.c:617 gdk-pixbuf/io-gdip-utils.c:752
+msgid "Couldn't load bitmap"
+msgstr "Nun se pudo cargar el mapa de bits"
+
+#: gdk-pixbuf/io-gdip-utils.c:774
+msgid "Couldn't load metafile"
+msgstr "Nun se pudo cargar el metaficheru"
+
+#: gdk-pixbuf/io-gdip-utils.c:933
+msgid "Unsupported image format for GDI+"
+msgstr "Formatu d'imaxe non soportáu pa GDI+"
+
+#: gdk-pixbuf/io-gdip-utils.c:940
+msgid "Couldn't save"
+msgstr "Nun se pudo guardar"
+
+#: gdk-pixbuf/io-gdip-wmf.c:58
+msgid "The WMF image format"
+msgstr "El formatu d'imaxe WMF"
+
+#: gdk-pixbuf/io-gif.c:222
 #, c-format
 msgid "Failure reading GIF: %s"
 msgstr "Fallu al lleer GIF: %s"
 
-#: gdk-pixbuf/io-gif.c:495 gdk-pixbuf/io-gif.c:1482 gdk-pixbuf/io-gif.c:1648
+#: gdk-pixbuf/io-gif.c:496 gdk-pixbuf/io-gif.c:1501 gdk-pixbuf/io-gif.c:1668
 msgid "GIF file was missing some data (perhaps it was truncated somehow?)"
 msgstr "Falta-y dalgún datu al ficheru GIF (¿pue que se frayare?)"
 
-#: gdk-pixbuf/io-gif.c:504
+#: gdk-pixbuf/io-gif.c:505
 #, c-format
 msgid "Internal error in the GIF loader (%s)"
 msgstr "Error internu nel cargador GIF (%s)"
 
-#: gdk-pixbuf/io-gif.c:578
+#: gdk-pixbuf/io-gif.c:579
 msgid "Stack overflow"
 msgstr "Sobrecarga de pila"
 
-#: gdk-pixbuf/io-gif.c:638
+#: gdk-pixbuf/io-gif.c:639
 msgid "GIF image loader cannot understand this image."
 msgstr "El cargador d'imaxes GIF nun pescancia esta imaxe."
 
-#: gdk-pixbuf/io-gif.c:667
+#: gdk-pixbuf/io-gif.c:668
 msgid "Bad code encountered"
 msgstr "Atopóse un códigu fallíu"
 
-#: gdk-pixbuf/io-gif.c:677
+#: gdk-pixbuf/io-gif.c:678
 msgid "Circular table entry in GIF file"
 msgstr "Entrada de tabla circular nel ficheru GIF"
 
-#: gdk-pixbuf/io-gif.c:865 gdk-pixbuf/io-gif.c:1468 gdk-pixbuf/io-gif.c:1521
-#: gdk-pixbuf/io-gif.c:1636
+#: gdk-pixbuf/io-gif.c:866 gdk-pixbuf/io-gif.c:1487 gdk-pixbuf/io-gif.c:1540
+#: gdk-pixbuf/io-gif.c:1656
 msgid "Not enough memory to load GIF file"
 msgstr "Nun hai memoria suficiente pa cargar ficheru GIF"
 
-#: gdk-pixbuf/io-gif.c:959
+#: gdk-pixbuf/io-gif.c:960
 msgid "Not enough memory to composite a frame in GIF file"
 msgstr "Nun hai memoria suficiente pa componer un cuadru nel ficheru GIF"
 
-#: gdk-pixbuf/io-gif.c:1131
+#: gdk-pixbuf/io-gif.c:1132
 msgid "GIF image is corrupt (incorrect LZW compression)"
 msgstr "La imaxe GIF ta frayada (compresión LZW incorreuta)"
 
-#: gdk-pixbuf/io-gif.c:1181
+#: gdk-pixbuf/io-gif.c:1182
 msgid "File does not appear to be a GIF file"
 msgstr "El ficheru nun paez ser un ficheru GIF"
 
-#: gdk-pixbuf/io-gif.c:1193
+#: gdk-pixbuf/io-gif.c:1194
 #, c-format
 msgid "Version %s of the GIF file format is not supported"
 msgstr "Nun ta soportada la versión %s del formatu GIF"
 
-#: gdk-pixbuf/io-gif.c:1302
+#: gdk-pixbuf/io-gif.c:1241
+#, fuzzy
+msgid "Resulting GIF image has zero size"
+msgstr "La imaxe tien un anchor de cero"
+
+#: gdk-pixbuf/io-gif.c:1320
 msgid ""
 "GIF image has no global colormap, and a frame inside it has no local "
 "colormap."
@@ -281,13 +356,22 @@ msgstr ""
 "La imaxe GIF nun tien mapa de colores global, y un cuadru en dientro d'ella "
 "nun tien mapa de colores llocal."
 
-#: gdk-pixbuf/io-gif.c:1543
+#: gdk-pixbuf/io-gif.c:1563
 msgid "GIF image was truncated or incomplete."
 msgstr "La imaxe GIF taba frayada o incompleta."
 
-#: gdk-pixbuf/io-gif.c:1699 gdk-pixbuf/io-gdip-gif.c:80
-msgid "The GIF image format"
-msgstr "El formatu d'imaxe GIF"
+#: gdk-pixbuf/io-icns.c:347
+#, c-format
+msgid "Error reading ICNS image: %s"
+msgstr "Error al lleer la imaxe ICNS: %s"
+
+#: gdk-pixbuf/io-icns.c:364
+msgid "Could not decode ICNS file"
+msgstr "Nun se pudo descodificar el ficheru ICNS"
+
+#: gdk-pixbuf/io-icns.c:397
+msgid "The ICNS image format"
+msgstr "El formatu d'imaxe ICNS"
 
 #: gdk-pixbuf/io-ico.c:228 gdk-pixbuf/io-ico.c:242 gdk-pixbuf/io-ico.c:291
 #: gdk-pixbuf/io-ico.c:302 gdk-pixbuf/io-ico.c:395
@@ -331,23 +415,6 @@ msgstr "El sensor del cursor ta fuera la imaxe"
 #, c-format
 msgid "Unsupported depth for ICO file: %d"
 msgstr "Profundidá non soportada pal ficheru ICO: %d"
-
-#: gdk-pixbuf/io-ico.c:1271 gdk-pixbuf/io-gdip-ico.c:59
-msgid "The ICO image format"
-msgstr "El formatu d'imaxe ICO"
-
-#: gdk-pixbuf/io-icns.c:347
-#, c-format
-msgid "Error reading ICNS image: %s"
-msgstr "Error al lleer la imaxe ICNS: %s"
-
-#: gdk-pixbuf/io-icns.c:364
-msgid "Could not decode ICNS file"
-msgstr "Nun se pudo descodificar el ficheru ICNS"
-
-#: gdk-pixbuf/io-icns.c:397
-msgid "The ICNS image format"
-msgstr "El formatu d'imaxe ICNS"
 
 #: gdk-pixbuf/io-jasper.c:74
 msgid "Couldn't allocate memory for stream"
@@ -408,27 +475,6 @@ msgstr "Nun pudo atopase memoria pa cargar ficheru JPEG"
 msgid "Transformed JPEG has zero width or height."
 msgstr "El JPEG tresformáu tien un anchor o altor igual a cero."
 
-#: gdk-pixbuf/io-jpeg.c:1139 gdk-pixbuf/io-gdip-jpeg.c:53
-#, c-format
-msgid ""
-"JPEG quality must be a value between 0 and 100; value '%s' could not be "
-"parsed."
-msgstr ""
-"La calidá JPEG tien de ser un valor d'ente 0 y 100; el valor '%s' nun pue "
-"procesase."
-
-#: gdk-pixbuf/io-jpeg.c:1154 gdk-pixbuf/io-gdip-jpeg.c:68
-#, c-format
-msgid ""
-"JPEG quality must be a value between 0 and 100; value '%d' is not allowed."
-msgstr ""
-"La calidá JPEG tien de ser un valor d'ente 0 y 100; el valor '%d' nun ye un "
-"valor válidu."
-
-#: gdk-pixbuf/io-jpeg.c:1316 gdk-pixbuf/io-gdip-jpeg.c:136
-msgid "The JPEG image format"
-msgstr "El formatu d'imaxe JPEG"
-
 #: gdk-pixbuf/io-pcx.c:186
 msgid "Couldn't allocate memory for header"
 msgstr "Nun pudo atopase memoria pal titular"
@@ -473,6 +519,16 @@ msgstr "Nun s'atopó la paleta al final de los datos PCX"
 #: gdk-pixbuf/io-pcx.c:755
 msgid "The PCX image format"
 msgstr "El formatu d'imaxe PCX"
+
+#: gdk-pixbuf/io-pixdata.c:148
+#, fuzzy
+msgid "Transformed pixbuf has zero width or height."
+msgstr "El PNG tresformáu tien un anchu o altor igual a cero"
+
+#: gdk-pixbuf/io-pixdata.c:186
+#, fuzzy
+msgid "The GdkPixdata format"
+msgstr "El formatu d'imaxe GIF"
 
 #: gdk-pixbuf/io-png.c:54
 msgid "Bits per channel of PNG image is invalid."
@@ -630,47 +686,53 @@ msgstr "Memoria insuficiente pa cargar el ficheru PNM"
 msgid "The PNM/PBM/PGM/PPM image format family"
 msgstr "La familia de formatos d'imaxe PNM/PBM/PGM/PPM"
 
-#: gdk-pixbuf/io-qtif.c:127
+#: gdk-pixbuf/io-qtif.c:128
 msgid "Input file descriptor is NULL."
 msgstr "El descriptor d'entrada del ficheru ta baleru (NULL)."
 
-#: gdk-pixbuf/io-qtif.c:142
+#: gdk-pixbuf/io-qtif.c:143
 msgid "Failed to read QTIF header"
 msgstr "Fallu al lleer testera QTIF"
 
-#: gdk-pixbuf/io-qtif.c:151 gdk-pixbuf/io-qtif.c:181 gdk-pixbuf/io-qtif.c:445
-#, c-format
-msgid "QTIF atom size too large (%d bytes)"
-msgstr "El tamañu de QTIF atom ye enforma grande (%d bytes)"
+#: gdk-pixbuf/io-qtif.c:152 gdk-pixbuf/io-qtif.c:189 gdk-pixbuf/io-qtif.c:459
+#, fuzzy, c-format
+msgid "QTIF atom size too large (%d byte)"
+msgid_plural "QTIF atom size too large (%d bytes)"
+msgstr[0] "El tamañu de QTIF atom ye enforma grande (%d bytes)"
+msgstr[1] "El tamañu de QTIF atom ye enforma grande (%d bytes)"
 
-#: gdk-pixbuf/io-qtif.c:171
-#, c-format
-msgid "Failed to allocate %d bytes for file read buffer"
-msgstr "Falló al asignar %d bytes pal búfer de llectura"
+#: gdk-pixbuf/io-qtif.c:175
+#, fuzzy, c-format
+msgid "Failed to allocate %d byte for file read buffer"
+msgid_plural "Failed to allocate %d bytes for file read buffer"
+msgstr[0] "Falló al asignar %d bytes pal búfer de llectura"
+msgstr[1] "Falló al asignar %d bytes pal búfer de llectura"
 
-#: gdk-pixbuf/io-qtif.c:195
+#: gdk-pixbuf/io-qtif.c:206
 #, c-format
 msgid "File error when reading QTIF atom: %s"
 msgstr "Error de ficheru al lleer el QTIF atom: %s"
 
-#: gdk-pixbuf/io-qtif.c:232
-#, c-format
-msgid "Failed to skip the next %d bytes with seek()."
-msgstr "Falló al saltar a los siguientes %d bytes cola gueta()."
+#: gdk-pixbuf/io-qtif.c:243
+#, fuzzy, c-format
+msgid "Failed to skip the next %d byte with seek()."
+msgid_plural "Failed to skip the next %d bytes with seek()."
+msgstr[0] "Falló al saltar a los siguientes %d bytes cola gueta()."
+msgstr[1] "Falló al saltar a los siguientes %d bytes cola gueta()."
 
-#: gdk-pixbuf/io-qtif.c:256
+#: gdk-pixbuf/io-qtif.c:270
 msgid "Failed to allocate QTIF context structure."
 msgstr "Falló al reservar la estructura de contestu de QTIF."
 
-#: gdk-pixbuf/io-qtif.c:316
+#: gdk-pixbuf/io-qtif.c:330
 msgid "Failed to create GdkPixbufLoader object."
 msgstr "Falló al crear l'oxetu GdkPixbufLoader."
 
-#: gdk-pixbuf/io-qtif.c:420
+#: gdk-pixbuf/io-qtif.c:434
 msgid "Failed to find an image data atom."
 msgstr "Falló al guetar datos atom de la imaxe."
 
-#: gdk-pixbuf/io-qtif.c:601
+#: gdk-pixbuf/io-qtif.c:618
 msgid "The QTIF image format"
 msgstr "El formatu d'imaxe QTIF"
 
@@ -831,19 +893,19 @@ msgstr "Nun pudo atroxase'l restu"
 msgid "The WBMP image format"
 msgstr "El formatu d'imaxe WBMP"
 
-#: gdk-pixbuf/io-xbm.c:296
+#: gdk-pixbuf/io-xbm.c:304
 msgid "Invalid XBM file"
 msgstr "Ficheru XBM nun ye válidu"
 
-#: gdk-pixbuf/io-xbm.c:306
+#: gdk-pixbuf/io-xbm.c:314
 msgid "Insufficient memory to load XBM image file"
 msgstr "Memoria insuficiente pa cargar ficheru d'imaxe XBM"
 
-#: gdk-pixbuf/io-xbm.c:454
+#: gdk-pixbuf/io-xbm.c:462
 msgid "Failed to write to temporary file when loading XBM image"
 msgstr "Falló al escribir nel ficheru temporal al cargar la imaxe XBM"
 
-#: gdk-pixbuf/io-xbm.c:493
+#: gdk-pixbuf/io-xbm.c:501
 msgid "The XBM image format"
 msgstr "El formatu d'imaxe XBM"
 
@@ -887,50 +949,8 @@ msgstr "Falló al escribir el ficheru temporal al cargar la imaxe XPM"
 msgid "The XPM image format"
 msgstr "El formatu d'imaxe XPM"
 
-#: gdk-pixbuf/io-gdip-emf.c:59
-msgid "The EMF image format"
-msgstr "El formatu d'imaxe EMF"
-
-#: gdk-pixbuf/io-gdip-utils.c:154
-#, c-format
-msgid "Could not allocate memory: %s"
-msgstr "Nun se pudo asignar memoria: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:179 gdk-pixbuf/io-gdip-utils.c:293
-#: gdk-pixbuf/io-gdip-utils.c:333
-#, c-format
-msgid "Could not create stream: %s"
-msgstr "Nun se pudo crear el fluxu: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:193
-#, c-format
-msgid "Could not seek stream: %s"
-msgstr "Nun se pudo buscar el fluxu: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:205
-#, c-format
-msgid "Could not read from stream: %s"
-msgstr "Nun se pudo lleer el fluxu: %s"
-
-#: gdk-pixbuf/io-gdip-utils.c:617 gdk-pixbuf/io-gdip-utils.c:752
-msgid "Couldn't load bitmap"
-msgstr "Nun se pudo cargar el mapa de bits"
-
-#: gdk-pixbuf/io-gdip-utils.c:774
-msgid "Couldn't load metafile"
-msgstr "Nun se pudo cargar el metaficheru"
-
-#: gdk-pixbuf/io-gdip-utils.c:933
-msgid "Unsupported image format for GDI+"
-msgstr "Formatu d'imaxe non soportáu pa GDI+"
-
-#: gdk-pixbuf/io-gdip-utils.c:940
-msgid "Couldn't save"
-msgstr "Nun se pudo guardar"
-
-#: gdk-pixbuf/io-gdip-wmf.c:58
-msgid "The WMF image format"
-msgstr "El formatu d'imaxe WMF"
+#~ msgid "Unsupported animation type"
+#~ msgstr "Tipu d'animación non soportáu"
 
 #~ msgid "Couldn't allocate memory for paletted data"
 #~ msgstr "Nun pudo acutase memoria pa los datos de paleta"

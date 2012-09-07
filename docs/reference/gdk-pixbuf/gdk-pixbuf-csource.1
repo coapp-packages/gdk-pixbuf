@@ -1,13 +1,13 @@
 '\" t
 .\"     Title: gdk-pixbuf-csource
-.\"    Author: [see the "Author" section]
-.\" Generator: DocBook XSL Stylesheets v1.76.1 <http://docbook.sf.net/>
-.\"      Date: 12/16/2011
-.\"    Manual: [FIXME: manual]
-.\"    Source: [FIXME: source]
+.\"    Author: Tim Janik
+.\" Generator: DocBook XSL Stylesheets v1.77.1 <http://docbook.sf.net/>
+.\"      Date: 08/20/2012
+.\"    Manual: User Commands
+.\"    Source: gdk-pixbuf
 .\"  Language: English
 .\"
-.TH "GDK\-PIXBUF\-CSOURCE" "1" "12/16/2011" "[FIXME: source]" "[FIXME: manual]"
+.TH "GDK\-PIXBUF\-CSOURCE" "1" "" "gdk-pixbuf" "User Commands"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -31,15 +31,14 @@
 gdk-pixbuf-csource \- C code generation utility for GdkPixbuf images
 .SH "SYNOPSIS"
 .HP \w'\fBgdk\-pixbuf\-csource\fR\ 'u
-\fBgdk\-pixbuf\-csource\fR [options] [image]
+\fBgdk\-pixbuf\-csource\fR [OPTION...] [IMAGE]
 .HP \w'\fBgdk\-pixbuf\-csource\fR\ 'u
-\fBgdk\-pixbuf\-csource\fR [options] \-\-build\-list [[name]\ [image]...]
+\fBgdk\-pixbuf\-csource\fR [OPTION...] \-\-build\-list [[NAME]\ [IMAGE]...]
 .SH "DESCRIPTION"
 .PP
 
 \fBgdk\-pixbuf\-csource\fR
 is a small utility that generates C code containing images, useful for compiling images directly into programs\&.
-.SH "INVOCATION"
 .PP
 
 \fBgdk\-pixbuf\-csource\fR
@@ -47,7 +46,7 @@ either takes as input one image file name to generate code for, or, using the
 \fB\-\-build\-list\fR
 option, a list of (\fIname\fR,
 \fIimage\fR) pairs to generate code for a list of images into named variables\&.
-.SS "Options"
+.SH "OPTIONS"
 .PP
 \fB\-\-stream\fR
 .RS 4
@@ -130,15 +129,6 @@ documentation, shipped with the Gtk+ distribution, available from
 .SH "BUGS"
 .PP
 The runlength encoder gets out of sync with the pixel boundaries, since it includes the rowstride padding in the encoded stream\&. Furthermore, it generates pixbufs with suboptimal rowstride in some cases\&.
-.SH "AUTHOR"
-.PP
-
-\fBgdk\-pixbuf\-csource\fR
-was written by Tim Janik
-timj@gtk\&.org\&.
-.PP
-This manual page was provided by Tim Janik
-timj@gtk\&.org\&.
 .SH "NOTES"
 .IP " 1." 4
 www.gtk.org
